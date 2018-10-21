@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>In-class Exercises | SAVI 702</title>
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya Sans' rel='stylesheet' type='text/css'>
+        <link href="../css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="../css/inclass.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <a href="..">&larr; SAVI 702</a>
+                <h1>In-class Exercises</h1>
+            </header>
+
+            <section>
+                <h2>Part 1: Latitude and Longitude</h2>
+                <p>Let's plot some points!</p>
+                <ol>
+                    <li>Download <a href="data/savi702-week1-data.zip">today's data</a>.</li>
+                    <li>First time:
+                        <ol>
+                            <li>Visit <a href="http://dwtkns.com/pointplotter">dwtkns.com/pointplotter</a>.</li>
+                            <li>Open <strong>volcanoes.txt</strong> from today's data in a text editor.</li>
+                            <li>Copy and paste the coordinates for the volcanoes into the text box on <a href="http://dwtkns.com/pointplotter">dwtkns.com/pointplotter</a> and press <strong>Plot points</strong>.</li>
+                        </ol>
+                    </li>
+                    <li>Second time:
+                        <ol>
+                            <li>Visit <a href="http://darrinward.com/lat-long">darrinward.com/lat-long</a>.</li>
+                            <li>Uncheck <strong>(Demo) Road Trip</strong>.</li>
+                            <li>Paste the volcanoes coordinates under <strong>Quick Lat/Lng Entry</strong> and click <strong>Add To Map</strong>.</li>
+                            <li>The results might be different from what you expected: why?</li>
+                        </ol>
+                    </li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Part 2: Install QGIS</h2>
+                <p><strong>Windows</strong></p>
+                <ol>
+                    <li>Visit the <a class="external" href="https://qgis.org/en/site/forusers/download.html#" target="_blank" rel="noopener"><span>QGIS download page</span></a>.</li>
+                    <li>Select the appropriate package (32 bit or 64 bit) and download it.</li>
+                    <li>Once the package has downloaded, run it.</li>
+                    <li>Open QGIS to confirm that it works.</li>
+                </ol>
+                <p><strong>OS X</strong></p>
+                <ol>
+                    <li>Install <a href="https://www.python.org/downloads/mac-osx/" target="_blank" rel="noopener" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.python.org/downloads/mac-osx/&amp;source=gmail&amp;ust=1535822919691000&amp;usg=AFQjCNHqQOqRV5wqs34xQs7YHQwT0M05Qg">Python 3.6.5</a>.</li>
+                    <li>Visit the <a class="external" href="https://qgis.org/en/site/forusers/download.html" target="_blank" rel="noopener"><span>QGIS download page</span></a>.</li>
+                    <li>Download the installer package for <strong>Version 3.2</strong>.</li>
+                    <li>Install GDAL (<strong>2 Install GDAL Complete</strong>) in the QGIS installer package.</li>
+                    <li>Install QGIS (<strong>3 Install QGIS 3</strong>) in the QGIS installer package.</li>
+                    <li>If OS X gives you an error while installing any of the packages, force it to install by right-clicking on the installer, selecting Open, and choose to install it.</li>
+                    <li>Open QGIS to confirm that it works.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Part 3: Load Data in QGIS</h2>
+                <p>Practice opening data in QGIS and getting around the interface.</p>
+                <ol>
+                    <li>From today's data, open <strong>ne_110m_admin_1_states_provinces_lakes</strong> by dragging and dropping it into QGIS.</li>
+                    <li>Use the hand tool (<strong>Pan Map</strong>) to move around, the zoom tools to zoom in and out.</li>
+                    <li>Open the attribute table by right-clicking on the layer in the Layers Panel and clicking <strong>Open Attribute Table</strong>.</li>
+                    <li>Do the same with <strong>nybb.geojson</strong>.</li>
+                </ol>
+            </section>
+
+            <footer>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">SAVI 702</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ebrelsford.github.io/" property="cc:attributionName" rel="cc:attributionURL">Eric Brelsford</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </footer>
+        </main>
+    </body>
+</html>

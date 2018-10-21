@@ -1,0 +1,87 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background:#fff;
+  background-size:100%;
+  margin:0;
+  padding:0;
+  color:#111;
+  overflow: hidden;
+}
+
+h1, h2, h3, p { margin:0; }
+
+em, a {
+  font-style:normal;
+  color:#ff1759;
+}
+
+a {
+  background: #ff1759;
+  color:#000;
+  text-decoration:none;
+}
+
+img {
+    width: 100%; 
+}
+
+div.slide {
+  padding:10%;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  cursor:pointer;
+  cursor:hand;
+  font-size:40px;
+  overflow:hidden;
+  background-size:100%;
+}
+
+body.grid-mode {
+  overflow: scroll;
+}
+
+.grid-mode .slide {
+  border: 1px solid gray;
+  float: left;
+  height: 200px;
+  padding: 1%;
+  margin: 1%;
+  width: 31%;
+}
+
+.grid-mode .slide:hover {
+  outline: 3px solid black;
+}
+
+.grid-mode .slide h1 {
+  font-size: 50px;
+  line-height: 55px;
+}
+
+.grid-mode .slide h2 {
+  font-size: 40px;
+  line-height: 45px;
+}
+
+.grid-mode .slide p {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.grid-mode .slide li {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.grid-mode .slide pre {
+  font-size: 25px;
+  line-height: 30px;
+}

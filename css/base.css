@@ -1,0 +1,199 @@
+/*
+    Reset by Eric Meyer http://meyerweb.com/eric/tools/css/reset/
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+
+/*
+ * Global
+ */
+@font-face {
+    font-family: "CooperHewitt-Heavy";
+    src: url("../fonts/CooperHewitt-Heavy.woff") format('woff');
+}
+
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 70px;
+    background: white;
+    color: black;
+}
+
+b, strong { font-weight: bold }
+i, em { font-style: italic }
+
+img {
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3 {
+    font-family: 'CooperHewitt-Heavy', sans-serif;
+    margin-bottom: 25px;
+    text-shadow: white 0 4px, white -4px 0, white 0 -4px, white 4px 0, white 4px 4px, white -4px -4px, white 4px -4px, white -4px 4px;
+}
+
+p {
+    font-size: 70px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/*
+ * Pig overrides
+ */
+div.slide {
+    /*background-attachment: fixed;*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    cursor: default;
+    font-size: 70px;
+    line-height: 100px;
+    padding: 5%;
+    position: relative;
+    width: 100%;
+}
+
+a {
+    background: #FFCDF1;
+}
+
+h2 a {
+    color: white;
+    text-shadow: black 0 4px, black -4px 0, black 0 -4px, black 4px 0, black 4px 4px, black -4px -4px, black 4px -4px, black -4px 4px;
+}
+
+li {
+    font-size: 70px;
+    margin-left: 100px;
+}
+
+.readable-text {
+    background-color: hsla(0, 0%, 0%, 0.5);
+    padding: 20px;
+}
+
+
+/*
+ * Slide types
+ */
+
+.slide.dark-background {
+    color: white;
+}
+
+.slide h1 {
+    font-size: 150px;
+    line-height: 175px;
+}
+
+.slide h2 {
+    font-size: 125px;
+    line-height: 150px;
+}
+
+.slide h3 {
+    font-size: 115px;
+    line-height: 130px;
+}
+
+.slide {
+    font-size: 70px;
+    line-height: 100px;
+    position: relative;
+}
+
+.slide.intermission:after {
+    content: "∎";
+}
+
+
+/*
+ * Other styles
+ */
+a.source {
+    float: right;
+    font-size: 35px;
+    line-height: 40px;
+    margin-top: 25px;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+
+.hidden-text {
+    opacity: 0;
+}
+
+.quote {
+    padding: 50px;
+}
+
+.left, .right {
+    float: left;
+}
+
+.right {
+    padding-left: 30px;
+}
+
+pre {
+    font-size: 55px;
+    line-height: 60px;
+}
+
+code {
+    font-family: Courier, mono;
+}
+
+code.wrapped {
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.highlighted {
+    background-color: yellow;
+}
