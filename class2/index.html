@@ -1,0 +1,648 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Class 2 | SAVI 702</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <link href="https://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans" rel="stylesheet" type="text/css">
+
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" />
+
+        <script src="../js/hammer.min.js"></script>
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <p>Welcome to Introduction to QGIS, Class 2</p>
+            <p>This is a web page that can be viewed as slides.</p>
+            <p>→ to move forward</p>
+            <p>← to go back</p>
+            <p>g to view grid</p>
+        </div>
+
+        <div class="slide">
+            <h1>Introduction to QGIS</h1>
+            <p>Class 2</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dangermond.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/meridians.jpg);">
+        </div>
+
+        <div class="slide">
+            <h2>Where is -73.99, 40.71?</h2>
+        </div>
+
+        <div class="slide">
+            <h2>recommended readings</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/bolstad_gis_fundamentals.jpg);">
+            <a class="source" href="http://www.amazon.com/GIS-Fundamentals-Geographic-Information-Systems/dp/0971764735">
+                Bolstad, GIS Fundamentals
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/discover-qgis.png);">
+            <a class="source" href="http://locatepress.com/dqw">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/woods_power_of_maps.jpg);">
+            <a class="source" href="http://www.guilford.com/books/Rethinking-the-Power-of-Maps/Denis-Wood/9781593853662">
+                Woods, Rethinking the Power of Maps
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/crampton_mapping.jpg);">
+            <a class="source" href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-1405121726.html#">
+                Crampton, Mapping
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/monmonier_lie_with_maps.jpg);">
+            <a class="source" href="http://www.markmonmonier.com/how_to_lie_with_maps_14880.htm">
+                Monmonier, How to Lie with Maps
+            </a>
+        </div>
+
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>Cartographic design &amp; conventions</h2>
+        </div>
+
+        <div class="slide">
+            <h2>think about:</h2>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>scale</li>
+                <li>hierarchy</li>
+                <li>color</li>
+                <li>symbology</li>
+            </ul>
+        </div>
+
+        <div class="slide" style="background-image: url(img/scale.jpg);">
+            <h2>scale</h2>
+        </div>
+
+        <div class="slide">
+            <h2>hierarchy</h2>
+            <p>"Important things must look important, and the most important thing should look the most important."</p>
+            <a class="source" href="http://books.google.com/books?id=vF0Chp0YZn0C">
+                Understanding Different Geographies
+            </a>
+        </div>
+
+        <div class="slide">
+            <h2>color</h2>
+            <p>Think about what the colors you are using mean to the viewer.</p>
+            <p>Use contrast to your advantage.</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/symbols.png);">
+            <h2>symbology</h2>
+            <a class="source" href="http://www.svgopen.org/2008/papers/41-MapViewSVG__an_extension_for_ESRI_GIS_and_Mapping_Software/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc_tourist_map.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mta-subway-map.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/google.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-osm.png);">
+        </div>
+
+        <div class="slide">
+            <h2>hierarchy</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/language_map.png);">
+            <a class="source" href="http://cartastrophe.wordpress.com/2012/01/02/an-unintelligible-language/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/language_map_zoom.png);">
+            <a class="source" href="http://cartastrophe.wordpress.com/2012/01/02/an-unintelligible-language/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/hydro_sites.png);">
+            <a class="source" href="https://cartastrophe.wordpress.com/2009/08/14/way-over-in-british-columbia/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/hydro_sites_zoom.png);">
+            <a class="source" href="https://cartastrophe.wordpress.com/2009/08/14/way-over-in-british-columbia/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/selectivity.png);">
+            <a class="source" href="https://cartastrophe.wordpress.com/2009/08/14/way-over-in-british-columbia/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mississippi_meanders.png);">
+            <a class="source" href="http://earthobservatory.nasa.gov/IOTD/view.php?id=6887">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mississippi_meanders_zoom.png);">
+            <a class="source" href="http://earthobservatory.nasa.gov/IOTD/view.php?id=6887">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mississippi_meanders_title.png);">
+            <a class="source" href="http://earthobservatory.nasa.gov/IOTD/view.php?id=6887">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cdc_ebola.jpg);">
+            <a class="source" href="http://www.cdc.gov/vhf/ebola/resources/distribution-map-guinea-outbreak.html">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>color</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/amish_us_no_legend.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/amish_us.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/amish_us_zoom.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/ny_county_legislatures_no_legend.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/ny_county_legislatures.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/nws-rainfall-before.jpg);">
+            <a class="source" href="https://twitter.com/NWS/status/902174274571689984">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nws-rainfall-after.jpg);">
+            <a class="source" href="https://twitter.com/NWS/status/902174274571689984">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nws-rainfall-tweet.png);">
+            <a class="source" href="https://twitter.com/NWS/status/902174274571689984">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/diverging.png);">
+            <a class="source" href="https://www.washingtonpost.com/news/wonk/wp/2016/05/25/how-much-a-decent-apartment-costs-you-in-every-county/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/color_brewer.png);">
+            <a class="source" href="http://colorbrewer2.org/">Color Brewer</a>
+        </div>
+
+        <div class="slide">
+            <h2>positioning</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/eu_us_sunshine.png);">
+        </div>
+
+        <div class="slide">
+            <h2>the "island effect"</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/france_island.png);">
+            <a class="source" href="http://www.foodtourist.com/French_Wine/Cairanne.htm">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>what you include is significant</h2>
+        </div>
+
+        <div class="slide">
+            <h2>what you include is significant...or will be interpreted as significant</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-bike-map.png);">
+            <a class="source" href="http://www.nyc.gov/html/dot/html/bicyclists/bikemaps.shtml">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-bike-map-jamaica-bay.png);">
+            <a class="source" href="http://www.nyc.gov/html/dot/html/bicyclists/bikemaps.shtml">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>same with what you exclude</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/see-rikers.png);">
+            <a class="source" href="http://untappedcities.com/2016/04/08/seerikers-guerrilla-campaign-adds-rikers-island-stickers-to-mta-maps-in-nyc/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-styling.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/open-data-0.png);">
+            <a class="source" href="https://data.cityofnewyork.us/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/open-data-1.png);">
+            <a class="source" href="https://data.cityofnewyork.us/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/open-data-2.png);">
+            <a class="source" href="https://data.cityofnewyork.us/Housing-Development/Building-Footprints/nqwf-w8eh">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/open-data-3.png);">
+            <a class="source" href="https://data.cityofnewyork.us/Housing-Development/Building-Footprints/nqwf-w8eh">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/print-layout.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html">in-class exercise, part 1</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>vector data formats</h2>
+        </div>
+
+        <div class="slide">
+            <h2>QGIS automatically reads many vector formats:</h2>
+        </div>
+
+        <div class="slide">
+            <h2>QGIS automatically reads many vector formats:</h2>
+            <ul style="list-style: disc;">
+                <li>shapefiles (.shp)</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>QGIS automatically reads many vector formats:</h2>
+            <ul style="list-style: disc;">
+                <li>shapefiles (.shp)</li>
+                <li>GeoJSONs (.geojson)</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>QGIS automatically reads many vector formats:</h2>
+            <ul style="list-style: disc;">
+                <li>shapefiles (.shp)</li>
+                <li>GeoJSONs (.geojson)</li>
+                <li>KML (.kml / .kmz)</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>QGIS automatically reads many vector formats:</h2>
+            <ul style="list-style: disc;">
+                <li>shapefiles (.shp)</li>
+                <li>GeoJSONs (.geojson)</li>
+                <li>KML (.kml / .kmz)</li>
+                <li>OSM (.osm)</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>shapefiles</h2>
+        </div>
+
+        <div class="slide">
+            <h2>shapefiles were initially created by ESRI</h2>
+        </div>
+
+        <div class="slide">
+            <h2>shapefiles are difficult to read</h2>
+        </div>
+
+        <div class="slide">
+            <h2>(without proper software) shapefiles are difficult to read</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geojson-shp-binary.png);">
+        </div>
+
+        <div class="slide">
+            <h2>1. column names limited to ten characters</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/shapefile-column-names.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/shapefile-column-names.png);">
+            <h2>how do you pronounce "C_DIG2DESC"?</h2>
+        </div>
+
+        <div class="slide">
+            <h2>2. multiple files make up a shapefile</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/shapefile-files.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/shapefile-files-dbf.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/shapefile-files-prj.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/shapefile-files-index.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/shapefile-files-shp.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/shapefile-files-shp-xml.png);">
+        </div>
+
+        <div class="slide">
+            <h2>3. one geometry type per shapefile</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/shapefile-one-geometry-per-file.png);">
+        </div>
+
+        <div class="slide">
+            <h2>despite this, shapefiles are still by far the most common spatial data format</h2>
+        </div>
+
+        <div class="slide">
+            <h2>CSVs are handy for point data</h2>
+        </div>
+
+        <div class="slide">
+            <h2>these are simply text files</h2>
+        </div>
+
+        <div class="slide">
+            <h2><em>c</em>omma <em>s</em>eparated <em>v</em>alues</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/csv.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-csv-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-csv-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/latlng_coordinates.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-csv-2.png);">
+        </div>
+
+        <div class="slide">
+            <h2>projections and coordinate reference systems (CRS)</h2>
+        </div>
+
+        <div class="slide">
+            <h2>we'll use <em>projection</em> and <em>CRS</em> interchangeably</h2>
+        </div>
+
+        <div class="slide">
+            <h2><em>projection</em> and <em>CRS</em></h2>
+            <p>how you determine where coordinates actually are on the earth</p>
+        </div>
+
+        <div class="slide">
+            <h2>latitude and longitude are always in relation to a <em>datum</em></h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoid.gif);">
+            <a class="source" href="http://www.cinesat.com/html/cinesat/cs/csprj.htm">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/earth-shapes.jpg);">
+            <a class="source" href="https://mapschool.io/#the-shape-of-the-earth">mapschool.io</a>
+        </div>
+
+        <div class="slide">
+            <h2>a <em>datum</em> is the combination of a spheroid and how it's being used</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/global_local_ellipsoids.png);">
+            <a class="source" href="http://en.wikipedia.org/wiki/Geodetic_datum">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/harvey-houston-sinking-map.jpg);">
+            <a class="source" href="https://twitter.com/geo_gif/status/904808613339848704">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/harvey-houston-sinking-tweet.png);">
+            <a class="source" href="https://twitter.com/geo_gif/status/904808613339848704">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nad_euro.gif);">
+        </div>
+
+        <div class="slide">
+            <h2>you will often see <em>NAD83</em> and <em>WGS84</em></h2>
+        </div>
+
+        <div class="slide">
+            <h2>but what if you want to turn those coordinates into something that works on a 2d plane (like paper)?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mercator.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/orange_projection.jpg);">
+            <a class="source" href="http://csc.noaa.gov/geozone/happy-birthday-mercator/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/projections_faces.png);">
+            <a class="source" href="http://flowingdata.com/2014/01/13/map-projections-illustrated-with-a-face/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/projections-interactive.png);">
+            <a class="source" href="http://bl.ocks.org/vlandham/raw/9216751/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/projection_families.png);">
+            <a class="source" href="http://docs.qgis.org/2.0/en/docs/gentle_gis_introduction/coordinate_reference_systems.html">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/earth_wind_map.png);">
+            <a class="source" href="http://earth.nullschool.net/">
+                source
+            </a>
+        </div>
+
+        <div class="slide">
+            <h2>projections are just math</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/projection_math.png);">
+            <a class="source" href="http://www.progonos.com/furuti/MapProj/Normal/CartHow/HowBraunC/howBraunC.html">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/projection_math.png);">
+            <h2>luckily GISs are pretty good at math</h2>
+            <a class="source" href="http://www.progonos.com/furuti/MapProj/Normal/CartHow/HowBraunC/howBraunC.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-csv-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-csv-2.png);">
+            <h2>EPSG:4326</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-csv-2.png);">
+            <h2>latitude and longitude, with WGS 84</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-csv-2.png);">
+            <h2>if your data is in latitude and longitude, use EPSG:4326</h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html">in-class exercise, part 2</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2>Where is 988055, 197842?</h2>
+        </div>
+
+        <div class="slide">
+            <p>projections mainly distort</p>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>area (equivalence)</li>
+                <li>shape (conformity)</li>
+                <li>distance</li>
+            </ul>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mercator_puzzle.png);">
+            <a class="source" href="http://bramus.github.io/mercator-puzzle-redux/">mercator puzzle</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tissot_mercator.png);">
+            <a class="source" href="http://www.progonos.com/furuti/MapProj/Normal/CartProp/Distort/distort.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tissot_mollweide.png);">
+            <a class="source" href="http://www.progonos.com/furuti/MapProj/Normal/CartProp/Distort/distort.html">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tissot_oblique_mercator.png);">
+            <a class="source" href="http://www.progonos.com/furuti/MapProj/Normal/CartProp/Distort/distort.html">
+                source
+            </a>
+        </div>
+
+        <div class="slide">
+            <h2>every projection distorts some aspect of the geography</h2>
+        </div>
+
+        <div class="slide">
+            <h2>you have to pick the one(s) that make the most sense for what you're doing</h2>
+        </div>
+
+        <div class="slide">
+            <h2>usually you will pick a projection for your project to make your data look good</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/us-wgs84.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/us-albers.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-wgs84.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-2263.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/project-settings.png);"></div>
+
+        <div class="slide" style="background-image: url(img/projection-search-qgis.png);"></div>
+
+        <div class="slide" style="background-image: url(img/projection-search-qgis.png);">
+            <h2>to do this, change your project's projection</h2>
+        </div>
+
+        <div class="slide">
+            <h2>not sure which projection to use?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/projection-search-qgis.png);">
+            <h2>search in qgis</h2>
+        </div>
+
+        <div class="slide">
+            <h2>look at the projections used by governments in the area you're mapping</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/state_plane.jpg);">
+            <a class="source" href="http://gis.tulaliptribes-nsn.gov/Home/FrequentlyAskedQuestions.aspx">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/epsg_2263.png);">
+            <a class="source" href="http://spatialreference.org/ref/epsg/2263/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/epsg_2263.png);">
+            <h2>best for New York area, many city datasets use this</h2>
+            <a class="source" href="http://spatialreference.org/ref/epsg/2263/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/epsg_2263.png);">
+            <h2>remember <em>4326</em> and <em>2263</em> in New York and you're set</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/projestions.png);">
+            <h2>consider using projestions</h2>
+            <a class="source" href="https://projest.io/ns/">source</a>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html">in-class exercise, part 3</a></h2>
+        </div>
+
+    </body>
+</html>

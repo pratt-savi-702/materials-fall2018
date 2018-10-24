@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>Assignment 1 | SAVI 702</title>
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya Sans' rel='stylesheet' type='text/css'>
+        <link href="../css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="../css/inclass.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+        <header>
+            <a href="..">&larr; SAVI 702</a>
+            <h1>Assignment 1</h1>
+        </header>
+
+        <section>
+            <p>In class this week we covered cartographic design principles and got a taste of QGIS. Use this assignment to get more familiar with QGIS and use it to compose printable maps.</p>
+            <p>Keep in mind that you're not expected to do anything for this assignment that we haven't covered in class (for example, complex styling). Use this assignment to get more comfortable with what we have covered thus far.</p>
+        </section>
+
+        <section>
+            <h2>Recommended readings and resources</h2>
+            <ul>
+                <li>Gretchen Peterson has <a href="https://www.youtube.com/watch?v=FCm1DtQB4Pk">an excellent presentation on styling with QGIS</a> that you might find useful.</li>
+                <li><a href="http://giscommons.org/introduction-concepts/">GIS Commons: Introduction</a></li>
+                <li><a href="http://2012books.lardbucket.org/books/geographic-information-system-basics/">Geographic Information System Basics, Chapters 1 and 2</a></li>
+                <li><a href="https://www.youtube.com/watch?v=sQ8ytFJE_Wk">QGIS 2.0</a>, a video about QGIS 2.0 that goes into the history of the software a bit</li>
+                <li>the <a href="http://docs.qgis.org/2.2/en/docs/user_manual/">QGIS User Guide</a></li>
+                <li><a href="https://www.packtpub.com/hardware-and-creative/learning-qgis-20">Learning QGIS 2.0</a></li>
+                <li><a href="http://gis.stackexchange.com/">GIS Stack Exchange</a>, a Q&amp;A site where people with GIS questions ask for help and people in the community answer their questions</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Videos</h2>
+            <p>I have recorded three <span class="youtube_link_to_box">videos</span> that should help with this assignment:</p>
+            <ul>
+                <li><a href="https://youtu.be/dxGAgLaiEKc">QGIS: Regional Map</a></li>
+                <li><a href="https://www.youtube.com/watch?v=qZvKG8e71Yk">QGIS: Projections</a></li>
+                <li><a href="https://youtu.be/CnqQpPjqapo">QGIS: Print Layouts</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Part 1: send an email to the google group</h2>
+            <ol>
+                <li>Join <a href="https://groups.google.com/forum/#!forum/savi702-fall2018">the Google Group</a> if you haven't already.</li>
+                <li>Send an email to the group using <a href="mailto:savi702-fall2018@googlegroups.com">savi702-fall2018@googlegroups.com</a>. Briefly introduce yourself and share a link to something map-related you find interesting.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Part 2: A Small Scale Map</h2>
+            <p>Pick a part of the world that you like or want to know more about and try your hand at making a thematic map of that area.</p>
+            <ol>
+                <li>Download Natural Earth data to make a map of a region you choose. <a href="http://www.naturalearthdata.com/">Natural Earth</a> is a free-to-use and accurate data set for the whole world, and it is the go-to data for this type of task. You will likely be interested in the <a href="http://www.naturalearthdata.com/downloads/10m-cultural-vectors">10m cultural</a> and <a href="http://www.naturalearthdata.com/downloads/10m-physical-vectors">10m physical</a> vector files, but feel free to use any that make sense for your map. All of the files are available on the <a href="http://www.naturalearthdata.com/features/">Natural Earth features</a> page.</li>
+                <li>Open the data in QGIS.</li>
+                <li>Using the techniques described in <a class="" href="https://www.youtube.com/watch?v=Q0e6lzpoyYU">the QGIS Regional Map video</a>, layer the data in such a way that your <strong>theme</strong> is furthered. Example themes might be: disputed territory, Antarctic claims, and transportation infrastructure. You are free to find and incorporate other data, but it will be fine to stick with Natural Earth data for this assignment.</li>
+                <li>Export your map as a PDF or image using the QGIS print composer.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Part 3: A Large Scale Map</h2>
+            <p>Congrats&mdash;you recently got a GIS job working for a city council member! Over the next few weeks you'll be making maps of a council district, so <a href="https://council.nyc.gov/districts/">pick one now</a> and plan on sticking with it. It could be&nbsp; one you live in, have done work on, or are interested in learning more about.</p>
+            <p>Here's what the council member is asking for this week:</p>
+        </section>
+
+        <section>
+            <div style="background: #ddd; padding: 15px;">
+                <p>Hi map-maker,</p>
+                <p>We're going to be having some town halls with constituents soon and we'd like to have a map of the district for reference when we're talking about upcoming improvements and issues that come up. These maps should be focused on our district but include the surrounding area for context. One of our tech people says the data on the city's open data portal would be a good place to start, and they gave me these links to some data:</p>
+                <ul>
+                    <li><a href="https://data.cityofnewyork.us/City-Government/City-Council-Districts/yusd-j4xi">City Council Districts</a></li>
+                    <li><a href="https://data.cityofnewyork.us/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b">Street Centerlines</a></li>
+                    <li><a href="https://data.cityofnewyork.us/Education/School-Point-Locations/jfju-ynrr">Schools</a></li>
+                    <li><a href="https://data.cityofnewyork.us/Business/Library/p4pf-fyc4">Libraries</a></li>
+                    <li><a href="https://data.cityofnewyork.us/Recreation/Open-Space-Parks-/g84h-jbjm">Parks</a></li>
+                </ul>
+                <p>They said something about downloading a "shapefile" but I was losing interest at that point. I'm sure you know what they meant. I also trust that you have ideas for other things to put on the map, so feel free to add some if you have time. Apparently you can <a href="https://data.cityofnewyork.us/browse?limitTo=maps">filter the open data portal to just maps</a>, maybe that will help?</p>
+                <p>Oh, and we will want this map as a PDF or image so we can print copies, and it should have a legend so we don't get confused during the meetings.</p>
+                <p>Thanks!</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Submitting your work</h2>
+            <p>This assignment is due <strong>October 29 at 6pm</strong>.</p>
+            <p>Use the QGIS <strong>Print Layout</strong> function to create <strong>two PDFs or images</strong>: one of your map from Part 2, the other of your map from Part 3. Make sure to add map accessories such as legends, titles, text areas with data sources, and scale bars as appropriate.</p>
+            <p>Finally, include a <strong>short summary</strong> (1/2 page is fine) of what you did for this assignment. Explain what you created and how you did so. What did you have problems with? What did you enjoy? What would you like to know how to do next? Why did you pick the city council district you went with?</p>
+            <p>In both parts I want to see that you are thinking about cartographic concepts as we discussed in class and that you are exploring QGIS's ability to make maps exported as PDFs.</p>
+            <p>Submit your work at <a href="https://docs.google.com/forms/d/e/1FAIpQLSdf0sHJ9JVDxSOHdsjBSFG58ZxzAAxAcYci4aML7pS35JRH8g/viewform">this form</a>.</p>
+        </section>
+
+        <footer>
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">SAVI 702</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ebrelsford.github.io/" property="cc:attributionName" rel="cc:attributionURL">Eric Brelsford</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+        </footer>
+        </main>
+    </body>
+</html>

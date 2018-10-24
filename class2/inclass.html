@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>In-class Exercises | SAVI 702</title>
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya Sans' rel='stylesheet' type='text/css'>
+        <link href="../css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="../css/inclass.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <a href="..">&larr; SAVI 702</a>
+                <h1>In-class Exercises</h1>
+            </header>
+
+            <section>
+                <h2>Part 1: Styling with QGIS</h2>
+                <ol>
+                    <li>Download <a href="data/savi702-class2-data.zip">tonight's data</a>.</li>
+                    <li>Open all of the data in the <strong>part1</strong> folder in QGIS. This data is clipped to the area in Brooklyn around Pratt.</li>
+                    <li>Keeping the cartographic principles we talked about in mind, experiment with styling each of the layers. Add labels as necessary.</li>
+                    <li>Create a PDF of your map using a Print Layout.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Part 2: Opening CSVs</h2>
+                <ol>
+                    <li>Go to <strong>Layer &gt; Data Source Manager</strong>.</li>
+                    <li>Select the <strong>Delimited Text</strong> tab.</li>
+                    <li>Browse for the file <strong>part2/311_noise_complaints_summer_2018.csv</strong>.</li>
+                    <li>Select <strong>CSV</strong> for the file format, ensure Longitude and Latitude are selected for the X and Y fields, and <strong>EPSG:4326</strong> is selected for the CRS.</li>
+                    <li>Click <strong>Add</strong> to add the data to your map.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Part 3: Project Projections</h2>
+                <ol>
+                    <li>Open the data in the <strong>part3</strong> folder.</li>
+                    <li>Go to <strong>Project &gt; Project Properties</strong>.</li>
+                    <li>Select the <strong>CRS</strong> tab if it's not already selected.</li>
+                    <li>In the <strong>Filter</strong> text field, type <code>4326</code> and select <strong>WGS 84</strong>.</li>
+                    <li>Press <strong>OK</strong>.</li>
+                    <li>Try it again with <code>2263</code> and another projection or two.</li>
+                </ol>
+            </section>
+
+            <footer>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">SAVI 702</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ebrelsford.github.io/" property="cc:attributionName" rel="cc:attributionURL">Eric Brelsford</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </footer>
+        </main>
+    </body>
+</html>
