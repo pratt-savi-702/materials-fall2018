@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>In-class Exercises | SAVI 702</title>
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya Sans' rel='stylesheet' type='text/css'>
+        <link href="../css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="../css/inclass.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+        <header>
+            <a href="..">&larr; SAVI 702</a>
+            <h1>In-class Exercises</h1>
+        </header>
+
+        <section>
+            <h2>Part 1: CSV Layer Projections</h2>
+            <ol>
+                <li>Download <a href="data/savi702-class3-data.zip">today's data</a>.</li>
+                <li>Open <strong>Council District Boundaries</strong> in QGIS.</li>
+                <li>Open <strong>NYPD Motor Vehicle Collisions</strong> (CSV) in QGIS.</li>
+                <li>Open <strong>7 Major Felony Incidents</strong> (CSV) in QGIS.</li>
+                <li>All of the layers should line up. If they do not, remove the layers that do not line up with the council districts and reload them while paying extra attention to the projection.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Part 2: Metadata</h2>
+            <ol>
+                <li>Look at the <a href="https://data.cityofnewyork.us/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b">Street Centerline</a> dataset on NYC Open Data.</li>
+                <li>We're looking for an attribute in the data that describes the kind of street each feature is. Look at a few features' attributes by clicking on them and see if you can find one.</li>
+                <li>Let's look at the metadata. Click the <strong>About</strong> tab, scroll down to <strong>Attachments</strong>, and download <strong>Centerline.pdf</strong>.</li>
+                <li>Open the PDF.</li>
+                <li>Which projection is the file in? Look under <strong>Spatial Reference</strong>.</li>
+                <li>Which attribute would help explain which type each street is? Look under <strong>Fields</strong>.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Part 3: Categorized maps</h2>
+            <ol>
+                <li>Open the <strong>streets</strong> shapefile in QGIS. You could continue with your style from the Class 2 in-class exercises if you like.</li>
+                <li>Style using a <strong>Categorized</strong> style on the column <strong>RW_TYPE</strong>. Customize each category's style and label text using the metadata for the file.</li>
+                <li>Open the <strong>NYPD Motor Vehicle Collisions</strong> CSV in QGIS if it's not already open.</li>
+                <li>Style using a <strong>Categorized</strong> style on the column <strong>CONTRIBUTING FACTOR VEHICLE 1</strong>.</li>
+                <li>Try categorizing on some other fields.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Part 4: Selecting data</h2>
+            <ol>
+                <li>Open the <strong>NYPD Motor Vehicle Collisions</strong> CSV in QGIS if it's not already open.</li>
+                <li>Use <strong>Select by expression</strong> to select only features where the <strong>NUMBER OF PERSONS INJURED</strong> field is over 0.</li>
+                <li>Clear the selection.</li>
+                <li>Use <strong>Select by expression</strong> to select only features where the <strong>BOROUGH</strong> field is equal to <strong>BRONX</strong>.</li>
+                <li>Export the selected data as its own shapefile and open it.</li>
+                <li>Experiment with using <strong>Select by expression</strong> with another field and/or dataset.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Part 5: Filtering data</h2>
+            <ol>
+                <li>Open the <strong>streets</strong> shapefile in QGIS if it's not already open.</li>
+                <li>Filter on <strong>RW_TYPE</strong> to only show paths and trails.</li>
+                <li>Filter on <strong>RW_TYPE</strong> to show everything except paths and trails.</li>
+                <li>Clear the filters to show all features.</li>
+            </ol>
+        </section>
+
+        <footer>
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">SAVI 702</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ebrelsford.github.io/" property="cc:attributionName" rel="cc:attributionURL">Eric Brelsford</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+        </footer>
+        </main>
+    </body>
+</html>
