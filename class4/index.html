@@ -1,0 +1,383 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Class 4 | SAVI 702</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <link href="https://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans" rel="stylesheet" type="text/css">
+
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" />
+
+        <script src="../js/hammer.min.js"></script>
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <p>Welcome to Introduction to QGIS, Class 4</p>
+            <p>This is a web page that can be viewed as slides.</p>
+            <p>→ to move forward</p>
+            <p>← to go back</p>
+            <p>g to view grid</p>
+        </div>
+
+        <div class="slide">
+            <h1>Introduction to QGIS</h1>
+            <p>Class 4</p>
+        </div>
+
+        <div class="slide">
+            <h2>you can also filter a layer</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-filter-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-filter-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-filter-1.png);">
+            <h2>same expressions!</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-filter-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-filter-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-filter-4.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 1</a></h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-rule-based-styles.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/attribute-table-filters.png);">
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>quantitative thematic maps</h2>
+        </div>
+
+        <div class="slide">
+            <h2>quantitative thematic maps use features' numeric attributes</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/designed_maps_1.jpg);">
+            <a class="source" href="http://esripress.esri.com/display/index.cfm?fuseaction=display&websiteID=132&moduleID=0">Designed Maps</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/designed_maps_1_legend.jpg);">
+            <a class="source" href="http://esripress.esri.com/display/index.cfm?fuseaction=display&websiteID=132&moduleID=0">Designed Maps</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/designed_maps_2.jpg);">
+            <a class="source" href="http://esripress.esri.com/display/index.cfm?fuseaction=display&websiteID=132&moduleID=0">Designed Maps</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/designed_maps_2_zoom.jpg);">
+            <a class="source" href="http://esripress.esri.com/display/index.cfm?fuseaction=display&websiteID=132&moduleID=0">Designed Maps</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/quantitative-points.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html">in-class exercise, part 2</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2>quantitative thematic maps with polygons</h2>
+            <p>often: choropleth maps</p>
+        </div>
+
+        <div class="slide">
+            <h2>choropleth</h2>
+            <p><strong>choro</strong>: region</p>
+            <p><strong>pleth</strong>: multitude</p>
+        </div>
+
+        <div class="slide">
+            <h2>choropleth</h2>
+            <p>a map of <strong>numbers</strong> by region</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/bachelors_degree.jpg);">
+            <a class="source" href="http://rkpjrhist615.wordpress.com/page/6/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/population_growth.jpg);">
+            <a class="source" href="http://www.osmmc.ca/gallery.php">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/smoking_rates.png);">
+            <a class="source" href="http://www.nytimes.com/interactive/2014/03/25/us/smoking-rate-map.html?_r=0">
+                source
+            </a>
+        </div>
+
+        <div class="slide">
+            <h2>one way to make a choropleth is by counting points in polygons</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-search.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-search-points-in.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/count-points-in-polygon.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/join-count.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html">in-class exercise, part 3</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2>how do you decide which regions are given which styles?</h2>
+        </div>
+
+        <div class="slide">
+            <h2>there are no natural categories</h2>
+        </div>
+
+        <div class="slide">
+            <h2>so we create categories by splitting the quantitative data into "bins"</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/gis_fundamentals.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/fig9-15.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/fig9-16.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/fig9-17.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/fig9-18.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/incarcerated_population.jpg);">
+            <a class="source" href="http://personal.frostburg.edu/ingarvie0/Maps.htm">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/choropleth_multiethnic.jpg);">
+            <a class="source" href="http://uxblog.idvsolutions.com/2011/10/telling-truth.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/choropleth_multiethnic_histogram.jpg);">
+            <a class="source" href="http://uxblog.idvsolutions.com/2011/10/telling-truth.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/quantitative-polygons.png);">
+            <a class="source" href="http://uxblog.idvsolutions.com/2011/10/telling-truth.html">source</a>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html">in-class exercise, part 4</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2>the Modifiable Areal Unit Problem</h2>
+        </div>
+
+        <div class="slide">
+            <h2>the Modifiable Areal Unit Problem</h2>
+            <p>the shapes you use can influence the way your data looks without changing the data</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cdc_ebola.jpg);">
+            <a class="source" href="http://www.cdc.gov/vhf/ebola/resources/distribution-map-guinea-outbreak.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/maup_rate_numbers.png);">
+        </div>
+
+        <div class="slide">
+            <h2>consider the size of the polygons you are aggregating to</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/europe-pop-0.png);">
+            <a class="source" href="https://blog.datawrapper.de/weekly-chart-europegrowth/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/europe-pop-1.png);">
+            <a class="source" href="https://blog.datawrapper.de/weekly-chart-europegrowth/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/europe-pop-2.png);">
+            <a class="source" href="https://blog.datawrapper.de/weekly-chart-europegrowth/">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>(almost) never map counts</h2>
+        </div>
+
+        <div class="slide">
+            <h2>(almost) always divide counts by some common factor</h2>
+        </div>
+
+        <div class="slide">
+            <h2>think "incidents per 100,000 people"</h2>
+        </div>
+
+        <div class="slide">
+            <h2>think "crashes per square mile"</h2>
+        </div>
+
+        <div class="slide">
+            <h2>think percentages of features in an area</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/city-choropleth.png);">
+            <a class="source" href="http://www1.nyc.gov/assets/planning/html/data-maps/nyc-population/viz.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/city-choropleth-zoom.png);">
+            <a class="source" href="http://www1.nyc.gov/assets/planning/html/data-maps/nyc-population/viz.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/gerrymander.png);">
+            <a class="source" href="https://en.wikipedia.org/wiki/Gerrymandering">the gerrymander</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/gerrymandered-md.png);">
+            <a class="source" href="https://www.washingtonpost.com/news/wonk/wp/2014/05/15/americas-most-gerrymandered-congressional-districts/?utm_term=.0c66cd61b698">MD's 3rd district</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/gerrymandered-pa.png);">
+            <a class="source" href="https://www.washingtonpost.com/news/wonk/wp/2014/05/15/americas-most-gerrymandered-congressional-districts/?utm_term=.0c66cd61b698">PA's 7th district</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/2016-clinton-would-have-won.png);">
+            <a class="source" href="https://medium.com/@khayeswilson/clinton-would-have-won-if-the-united-states-looked-like-this-7b9c844b76a9">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/2016-election-states.png);">
+            <a class="source" href="http://www-personal.umich.edu/~mejn/election/2016/">2016 presidential election results</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/2016-election-counties.png);">
+            <a class="source" href="http://www-personal.umich.edu/~mejn/election/2016/">2016 presidential election results</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/trump-map-hang.png);">
+            <a class="source" href="https://twitter.com/TreyYingst/status/862669407868391424/photo/1">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/trump-map-desk.jpg);">
+            <a class="source" href="http://www.newsweek.com/donald-trump-wants-you-know-he-won-election-591920">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>maybe you don't need a choropleth!</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/2016-election-counties-cartogram.png);">
+            <a class="source" href="http://www-personal.umich.edu/~mejn/election/2016/">2016 presidential election results</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/2016-election-counties-population-alpha.jpg);">
+            <a class="source" href="http://geoawesomeness.com/top-23-maps-charts-explain-results-2016-us-presidential-elections/">2016 presidential election results</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/2012-election-counties-circles.png);">
+            <a class="source" href="https://www.nytimes.com/interactive/2016/11/01/upshot/many-ways-to-map-election-results.html">2012 presidential election results</a>
+        </div>
+
+        <div class="slide">
+            <h2>adding fields to attribute tables</h2>
+        </div>
+
+        <div class="slide">
+            <h2>for example, to normalize data with expressions in the field calculator</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/field-calculator-button.png); background-size: 10%;">
+        </div>
+
+        <div class="slide" style="background-image: url(img/field-calculator-area.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/field-calculator-area.png);">
+            <h2>wait, which units is the area in?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/project-properties-units.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/field-calculator-density.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-field-calculator-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-field-calculator-1.png);">
+            <h2>use a specific name</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-field-calculator-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-field-calculator-2.png);">
+            <h2><em>decimal</em> number: a number with digits after the decimal point</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-field-calculator-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-field-calculator-3.png);">
+            <h2>the total digits in the number</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-field-calculator-4.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-field-calculator-4.png);">
+            <h2>the digits after the decimal</h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html">in-class exercise, part 5</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2>choropleth legends can be tricky</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/choropleth_legend_ugly.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/choropleth_legend_cleaner.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/choropleth_legend_cleaner.png);">
+            <h2>try to make them as readable as you can</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/frontline-opioid.jpg);">
+            <a class="source" href="http://www.pbs.org/wgbh/frontline/article/how-bad-is-the-opioid-epidemic/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/india-literacy.png);">
+            <a class="source" href="https://en.wikipedia.org/wiki/Literacy_in_India">source</a>
+        </div>
+
+    </body>
+</html>

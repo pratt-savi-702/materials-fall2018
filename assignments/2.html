@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Assignment 2 | SAVI 702</title>
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya Sans' rel='stylesheet' type='text/css'>
+        <link href="../css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="../css/inclass.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+        <header>
+            <a href="..">&larr; SAVI 702</a>
+            <h1>Assignment 2</h1>
+        </header>
+
+        <section>
+            <p><strong>Due November 5 at 6pm</strong></p>
+        </section>
+
+        <section>
+            <p>Now that you have some experience in QGIS, let's expand on that by making a few common types of maps: qualitative and quantitative maps.</p>
+            <p>Videos that reinforce the lecture and will be helpful with this assignment are posted below.</p>
+        </section>
+
+        <section>
+            <h2>Resources</h2>
+            <p>For choosing your data classification scheme for the second part, please refer to:</p>
+            <ul>
+                <li><a href="https://www.e-education.psu.edu/geog486/l4_p7.html#classification_schemes">The concepts page for a Penn State class on Cartography and Visualization. </a>This gets relevant around the heading "Classification Schemes," but the Choropleth Maps section is a pretty good review of what we talked about in class.</li>
+                <li><a href="http://krygier.owu.edu/krygier_html/geog_353/geog_353_lo/geog_353_lo07.html">Krygier's outline for his Cartography and Visualization class</a>. You can skip the sections dealing with ArcGIS and ArcView, the concepts are the important part. The classification schemes are listed under "Ideographic schemes" (search for it, it's around half of the way down the page).</li>
+                <li><a href="http://uxblog.idvsolutions.com/2011/10/telling-truth.html">Telling the Truth</a>, a quick look at which classification schemes work better for example distributions.</li>
+            </ul>
+            <p>And this reading might be of general interest:</p>
+            <ul>
+                <li><a href="https://blog.datawrapper.de/weekly-chart-europegrowth/">Different units, different patterns</a>, a short blog post by Datawrapper</li>
+            </ul>
+            <p>These videos:</p>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=eFoBztZSIaM">Attribute tables &amp; selecting features</a></li>
+                <li><a href="https://www.youtube.com/watch?v=f1t5pXdMCII">Styling qualitative maps</a></li>
+                <li><a href="https://www.youtube.com/watch?v=tXY0fjirGkI">Styling quantitative maps</a></li>
+                <li><a href="https://www.youtube.com/watch?v=hZOEUkRma68">Loading CSVs</a></li>
+                <li><a href="https://www.youtube.com/watch?v=fj0Ckyslnqc">Counting points in polygons</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Part 1: A Qualitative Thematic Map</h2>
+            <p>The council member you're working for is looking for a few more maps this week. For both, you're encouraged to continue with your map (or layers and styles from this map) you made for the previous assignment. Here's the first one:</p>
+            <div style="background: #ddd; padding: 15px;">
+                <p>Hi again map-maker,</p>
+                <p>We'd like some help understanding the land use in our council district. It doesn't have to be too fancy, but it would be nice to have all of the land uses on the map with some streets and a landmark or two for context. In particular, we're interested in understanding the relationship between residential areas and parks, but we still want to see all of the land uses.</p>
+                <p>I think you'll want to use the latest <a href="https://www1.nyc.gov/site/planning/data-maps/open-data/dwn-pluto-mappluto.page">MapPLUTO data</a> for our borough, and there should be a PDF in that file telling you how to use the data.</p>
+                <p>Thanks!</p>
+            </div>
+            <p>Create a <strong>qualitative</strong> (categorized) thematic map of land use with QGIS and the MapPLUTO data. Give some thought to the number of colors you're using and their legibility.</p>
+        </section>
+
+        <section>
+            <h2>Part 2: A Quantitative Thematic Map</h2>
+            <div style="background: #ddd; padding: 15px;">
+                <p>Hi map-maker,</p>
+                <p>There are some people in our district who have been advocating for safer streets in our community, and we're trying to get an idea of which parts of the district are most affected by car crashes. It would be helpful to see the <a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Motor-Vehicle-Collisions/h9gi-nx95">motor vehicle collisions</a> for the past year summarized by <a href="https://data.cityofnewyork.us/City-Government/2010-Census-Tracts/fxpq-c8ku">census tract</a>. Please provide streets and some landmarks so we can understand where the crashes are happening, and highlight the tracts with the most and fewest crashes.</p>
+                <p>Thanks again.</p>
+            </div>
+            <p>You will likely want to <strong>filter</strong> the collisions data before downloading it as it's a very large file. Then use points in polygon to count the number of collisions per census tract, then create a <strong>quantitative</strong> map helping your council member understand how many crashes are happening in the district.</p>
+            <p>Consider the colors you're using and the method you're using to classify the data. If there are outliers, consider the following: Do those outliers make sense to you? Are they a quirk of the data?</p>
+        </section>
+
+        <section>
+            <h2>Submitting Your Work</h2>
+            <p>Use a QGIS <strong>Print Layout</strong> to create <strong>two PDFs or images</strong>: one of your map from Part 1, the other of your map from Part 2. Make sure to add map accessories such as legends, titles, and scale bars as appropriate.</p>
+            <p>Finally, include a <strong>short summary</strong> (1/2 page) of what you did for this assignment. Explain what you created and how you did so. What did you have problems with? What did you enjoy? What would you like to know how to do next?</p>
+            <p>In both parts I want to see that you are thinking about cartographic concepts as we discussed in Class 2 and the techniques and issues that we discussed in Classes 3 and 4.</p>
+            <p>Submit your work using <a href="https://docs.google.com/forms/d/e/1FAIpQLSdP29TGglKoDgOuqzzVtEbUCThFksKEGptDEysQaSbUK--cTw/viewform">this Google Form</a>.</p>
+        </section>
+
+
+        <footer>
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">SAVI 702</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ebrelsford.github.io/" property="cc:attributionName" rel="cc:attributionURL">Eric Brelsford</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+        </footer>
+        </main>
+    </body>
+</html>

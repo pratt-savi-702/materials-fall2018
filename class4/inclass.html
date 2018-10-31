@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>In-class Exercises | SAVI 702</title>
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya Sans' rel='stylesheet' type='text/css'></link>
+        <link href="../css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="../css/inclass.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <a href="..">&larr; SAVI 702</a>
+                <h1>In-class Exercises</h1>
+            </header>
+
+            <section>
+                <h2>Part 1: Filtering data</h2>
+                <ol>
+                    <li>Download <a href="data/savi702-class4-data.zip">today's data</a>.</li>
+                    <li>Open the <strong>streets</strong> shapefile in QGIS. These are the streets around Pratt, so you can open them in a project from the previous class if you like.</li>
+                    <li>Filter on <strong>RW_TYPE</strong> to only show paths and trails.</li>
+                    <li>Filter on <strong>RW_TYPE</strong> to show everything except paths and trails.</li>
+                    <li>Clear the filters to show all features.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Part 2: Quantitative marker styles</h2>
+                <ol>
+                    <li>Open the <strong>NYPD Motor Vehicle Collisions</strong> CSV in QGIS.</li>
+                    <li>Style the points using a <strong>Graduated</strong> style using the <strong>NUMBER OF PERSONS INJURED</strong> column.</li>
+                    <li>Experiment with styling by colors and size, try other classification modes.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Part 3: Counting points in polygons</h2>
+                <ol>
+                    <li>Open the <strong>Council District Boundaries</strong> shapefile.</li>
+                    <li>Re-open the <strong>NYPD Motor Vehicle Collisions</strong> CSV if you closed it.</li>
+                    <li>Find the count of points in by city council district: in the bottom left search bar in QGIS, search for <strong>Count Points in Polygon</strong>.</li>
+                    <li>Open the attribute table for the new layer. It should have a new column named <code>NUMPOINTS</code>.</li>
+                    <li>Keep the data open for the next part.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Part 4: Styling choropleths</h2>
+                <ol>
+                    <li>Continue with the Council Districts from the previous part.</li>
+                    <li>Using the data from the previous part, style it using a <strong>Graduated</strong> style with the new <code>NUMPOINTS</code> column.</li>
+                    <li>Try a few classification schemes and look at the histogram for each.</li>
+                    <li>Keep the data open for the next part.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Part 5: Normalizing counts</h2>
+                <ol>
+                    <li>In your project properties, change <strong>General &gt; Units for area measurement</strong> to <strong>Square miles</strong>.</li>
+                    <li>In the Layers Panel, select the Council Districts layer that contains the count of collisions. Open the <strong>Field Calculator</strong>.</li>
+                    <li>Create a new field with name <code>area_sqmi</code>, type <code>Decimal number (real)</code>, length <code>15</code>, and precision <code>2</code>. Use the expression <code>$area</code> to calculate the area.</li>
+                    <li>Confirm that the field was added to the attribute table.</li>
+                    <li>Add another field to the layer, this time dividing the number of collisions by the area of the feature in square miles. This is the density of collisions per square mile. The expression should be something like <code>"NUMPOINTS" / "area_sqmi"</code>.</li>
+                    <li>Style the Council Districts using a <strong>Graduated</strong> style and your new density column. Compare the results to a Graduated style using the count column.</li>
+                </ol>
+            </section>
+
+            <footer>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">SAVI 702</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ebrelsford.github.io/" property="cc:attributionName" rel="cc:attributionURL">Eric Brelsford</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </footer>
+        </main>
+    </body>
+</html>
