@@ -1,0 +1,472 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Class 5 | SAVI 702</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <link href="https://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans" rel="stylesheet" type="text/css">
+
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" />
+
+        <script src="../js/hammer.min.js"></script>
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <p>Welcome to Introduction to QGIS, Class 5</p>
+            <p>This is a web page that can be viewed as slides.</p>
+            <p>→ to move forward</p>
+            <p>← to go back</p>
+            <p>g to view grid</p>
+        </div>
+
+        <div class="slide">
+            <h1>Introduction to QGIS</h1>
+            <p>Class 5</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/taxi_map.gif);">
+            <a class="source" href="http://nyctaxi.herokuapp.com/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/taxis_and_rainbows.png);">
+            <a class="source" href="https://medium.com/@vijayp/of-taxis-and-rainbows-f6bc289679a1">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/taxis_celebrities.png);">
+            <a class="source" href="http://gawker.com/the-public-nyc-taxicab-database-that-accidentally-track-1646724546">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/grafting.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/grafting.jpg);">
+            <h1>joins relate two datasets to each other</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/graft-potato-tomato.jpg);">
+            <a class="source" href="http://motherboard.vice.com/read/why-does-the-tomato-potato-plant-exist">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/graft-potato-tomato.jpg);">
+            <h1>joins create new hybrid datasets</h1>
+            <a class="source" href="http://motherboard.vice.com/read/why-does-the-tomato-potato-plant-exist">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/ketchup-n-fries.jpg);">
+            <a class="source" href="https://diybackyardfarm.com/2015/06/03/have-you-seen-this-cool-plant/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_results.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_results.png);">
+            <h1>"I have this spreadsheet I want to map..."</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_tracts.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_tracts.png);">
+            <h1>you need a file with relatable geographies</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_ids.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_ids.png);">
+            <h1>and a column in each file that relates the two</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/taxis_celebrities_medallion.png);">
+            <a class="source" href="http://gawker.com/the-public-nyc-taxicab-database-that-accidentally-track-1646724546">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/data-bank.png);">
+            <a class="source" href="https://databank.worldbank.org/data/indicator/SP.DYN.LE00.IN/1ff4a498/Popular-Indicators#">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/data-bank-csv.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/natural-earth-adm-a3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/add-join-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/add-join-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/add-join-1.png);">
+            <h2>the layer to join to this shapefile</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/add-join-1.png);">
+            <h2>the layer to join to this shapefile</h2>
+            <p>(usually a CSV)</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/add-join-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/add-join-2.png);">
+            <h2>the field in the join layer to use when joining</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/add-join-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/add-join-3.png);">
+            <h2>the field in the shapefile to use when joining</h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 1</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 2</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2>you have options when joining data:</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/add-join-options-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/add-join-options-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/add-join-options-1.png);">
+            <h2>select fields to bring from the spreadsheet</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/add-join-options-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/add-join-options-2.png);">
+            <h2>change the field prefix</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/joined.png);">
+        </div>
+
+        <div class="slide">
+            <h2>joins only exist in your project</h2>
+        </div>
+
+        <div class="slide">
+            <h2>if you want it to be permanent, export as a new shapefile</h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>joins are useful when working with census data</h2>
+        </div>
+
+        <div class="slide">
+            <h2>what is the census?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_2010.jpg);">
+            <a class="source" href="http://www.census.gov/1940census/">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>decennial census</h2>
+        </div>
+
+        <div class="slide">
+            <h2>every 10 years</h2>
+        </div>
+
+        <div class="slide">
+            <h2>everyone is supposed to be counted</h2>
+        </div>
+
+        <div class="slide">
+            <h2>determines federal districting</h2>
+        </div>
+
+        <div class="slide">
+            <h2>American Community Survey</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/acs_computers.png);">
+            <a class="source" href="http://www.pewresearch.org/fact-tank/2014/09/19/census-computer-ownership-internet-connection-varies-widely-across-u-s/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/acs_disabilities.jpg);">
+            <a class="source" href="https://usodep.blogs.govdelivery.com/2013/11/12/american-community-survey-statistics-help-you-learn-about-people-with-disabilities-in-your-community/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/acs_commute.png); background-size: 50%;">
+            <a class="source" href="http://www.bikewalkalliance.org/blog/248-why-biking-a-walking-advocates-love-and-hate-the-census">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>survey of ~295,000 addresses per month, 3.5 million per year</h2>
+        </div>
+
+        <div class="slide">
+            <h2>meant to replace the "long form" census</h2>
+        </div>
+
+        <div class="slide">
+            <h2>and keeps the data more up to date</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/acs_features.png);">
+            <a class="source" href="https://www.census.gov/programs-surveys/acs/guidance/estimates.html">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/margin_of_error.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/margin_of_error.png);">
+            <h2>margin of error: higher with 1-year estimates</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/margin_of_error.png);">
+            <h2>margin of error: higher on smaller geometries</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_accuracy.png);">
+            <a class="source" href="http://usatoday30.usatoday.com/news/nation/story/2012-05-22/census-hispanic-black/55140150/1">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_accuracy2.png);">
+            <a class="source" href="http://usatoday30.usatoday.com/news/nation/story/2012-05-22/census-hispanic-black/55140150/1">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census-citizenship.png);">
+            <a class="source" href="https://www.washingtonpost.com/politics/potential-citizenship-question-in-2020-census-could-shift-power-to-rural-america/2018/01/23/c4e6d2c6-f57c-11e7-beb6-c8d48830c54d_story.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census-hard-to-count.png);">
+            <a class="source" href="http://www.censushardtocountmaps2020.us/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_reporter.png);">
+            <a class="source" href="http://censusreporter.org/">census reporter</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/social_explorer.png);">
+            <a class="source" href="http://www.socialexplorer.com/">social explorer</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-population-factfinder.png);">
+            <a class="source" href="https://popfactfinder.planning.nyc.gov/">NYC Population FactFinder</a>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 3</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2>downloading census data</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/factfinder_1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/factfinder_2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/factfinder_3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/factfinder_4.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/factfinder_5.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/factfinder_6.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/factfinder_7.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 4</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2>no matter which data you download, you'll need appropriate geographies to go with it</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/blocks_sf_city.jpg);">
+            <a class="source" href="http://www.datapointed.net/2012/04/parts-and-parcels-us-census-block-maps/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/blocks_sf_city.jpg);">
+            <h2><em>census blocks</em> are the smallest area data is aggregated to</h2>
+            <a class="source" href="http://www.datapointed.net/2012/04/parts-and-parcels-us-census-block-maps/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/blocks_winter_haven.jpg);">
+            <a class="source" href="http://www.datapointed.net/visualizations/maps/census-blocks/winter-haven-florida/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nobody_lives_here.jpg);">
+            <a class="source" href="http://tumblr.mapsbynik.com/post/82791188950/nobody-lives-here-the-nearly-5-million-census">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_small_area_geography.jpg);">
+            <a class="source" href="http://libguides.mit.edu/c.php?g=176332&p=1158607">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/blocks.png);">
+            <h2>blocks</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/block_groups.png);">
+            <h2>block groups</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tracts.png);">
+            <h2>tracts</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tracts.png);">
+            <h2>tracts, population between 1,200 and 8,000, optimally 4,000</h2>
+            <a class="source" href="https://www.census.gov/geo/reference/gtc/gtc_ct.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_hierarchy.jpg);">
+            <a class="source" href="http://blog.datapolitan.com/2013/08/18/census-sample-survey-tract-block-zip-code/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_boundary_files.png);">
+            <a class="source" href="https://www.census.gov/geo/maps-data/data/tiger-cart-boundary.html">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>joining census data</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_boundary_files.png);">
+            <h2>make sure you have the right boundary files</h2>
+            <a class="source" href="https://www.census.gov/geo/maps-data/data/tiger-cart-boundary.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_join.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_join.png);">
+            <h2>join on <code>AFFGEOID</code> and <code>GEO.id</code></h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_join.png);">
+            <h2>join on <code>AFFGEOID</code> and <code>GEO.id</code></h2>
+            <h2>or <code>GEOID</code> and <code>GEO.id2</code></h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 5</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2>PUMAs</h2>
+        </div>
+
+        <div class="slide">
+            <h2>Public Use Microdata Areas</h2>
+        </div>
+
+        <div class="slide">
+            <h2>PUMAs have at least 100,000 people in them</h2>
+        </div>
+
+        <div class="slide">
+            <h2>since PUMAs are larger than census tracts, they tend to handle margin of error better</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-pumas.png);">
+            <a href="http://www1.nyc.gov/assets/planning/download/pdf/data-maps/nyc-population/census2010/puma_cd_map.pdf" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-pumas.png);">
+            <h2>in NYC, PUMAs were drawn to roughly follow community districts</h2>
+            <a href="http://www1.nyc.gov/assets/planning/download/pdf/data-maps/nyc-population/census2010/puma_cd_map.pdf" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-ntas.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-ntas.png);">
+            <h2>NTAs</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-ntas.png);">
+            <h2>Neighborhood Tabulation Area</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-ntas.png);">
+            <h2>NTAs are specific to NYC</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-ntas.png);">
+            <h2>NTAs fit within PUMAs and are made up of census tracts</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-ntas.png);">
+            <h2>since an NTA has to fit within a PUMA, it doesn't always correspond to a neighborhood's commonly known boundary</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-ntas.png);">
+            <h2>the city aggregates some census data at the NTA level</h2>
+        </div>
+
+
+        <div class="slide" style="background-image: url(img/nyc_ntas.png);">
+            <a class="source" href="https://www1.nyc.gov/site/planning/data-maps/open-data.page#other">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc_ntas.png);">
+            <a class="source" href="https://www1.nyc.gov/site/planning/data-maps/open-data.page#other">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc_ntas_shp.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc_nta_data.png);">
+            <a class="source" href="https://www1.nyc.gov/site/planning/data-maps/nyc-population/american-community-survey.page">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nhgis.png);">
+            <a class="source" href="https://nhgis.org/">NHGIS</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nhgis.png);">
+            <h2>great resource for historic census data</h2>
+            <a class="source" href="https://nhgis.org/">NHGIS</a>
+        </div>
+
+    </body>
+</html>
