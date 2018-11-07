@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>In-class Exercises | SAVI 702</title>
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya Sans' rel='stylesheet' type='text/css'>
+        <link href="../css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="../css/inclass.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <a href="..">&larr; SAVI 702</a>
+                <h1>In-class Exercises</h1>
+            </header>
+
+            <section>
+                <h2>Part 1: Creating a join-able field</h2>
+                <ol>
+                    <li>Download <a href="https://data.cityofnewyork.us/City-Government/NYC-Municipal-Building-Energy-Benchmarking-Results/hpid-63r5/data">this energy benchmarking dataset</a>.</li>
+                    <li>Download <a href="https://www1.nyc.gov/site/planning/data-maps/open-data/dwn-pluto-mappluto.page">MapPLUTO</a> for a single borough of your choice. If you already have MapPLUTO for a borough on your computer you can skip this step.</li>
+                    <li>Open both in QGIS. In the energy benchmarking dataset, use the Field Calculator and the <strong>Borough</strong>, <strong>Block</strong>, and <strong>Lot</strong> fields to create a single <strong>BBL</strong> field.</li>
+                    <li>Create an attribute join on the MapPLUTO file you have to the energy benchmarking dataset.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Part 2: Converting joined data fields</h2>
+                <ol>
+                    <li>Continue with the joined data from the previous part.</li>
+                    <li>Select only the features where <strong>2014 Score *</strong> isn't null.</li>
+                    <li>Export the selected features to a new shapefile.</li>
+                    <li>Select only the features where <strong>2014 Score</strong> is "Not Available".</li>
+                    <li>Using the Field Calculator, update <strong>2014 Score</strong> to be <strong>NULL</strong> for the select features.</li>
+                    <li>Deselect the features.</li>
+                    <li>Using the Field Calculator, make a new field based on <strong>2014 Score</strong> that is an integer field.</li>
+                    <li>Make a graduated style based on your new field.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Part 3: Spatial Joins, summarize points on polygons</h2>
+                <ol>
+                    <li>Download <a href="data/savi702-class6-data.zip">today's data</a>.</li>
+                    <li>Open <strong>City Council Districts</strong> and <strong>airbnb-listings-20181107</strong>.</li>
+                    <li>Use <strong>Join attributes by location (summary)</strong> from the search bar in the bottom left of the window.</li>
+                    <li>Do the join with these settings:
+                        <ol>
+                            <li>Make the council districts the <strong>Input layer</strong>.</li>
+                            <li>Make the Airbnb listings the <strong>Join layer</strong>.</li>
+                            <li>For <strong>Fields to summarize</strong>, select <strong>price</strong> and <strong>calculated_host_listings_count</strong>.</li>
+                            <li>For <strong>Summaries to calculate</strong>, select <strong>min</strong>, <strong>max</strong>, <strong>median</strong>, and <strong>mean</strong>.</li>
+                        </ol>
+                    </li>
+                    <li>Examine the resulting layer's attribute table.</li>
+                    <li>Style the data using a graduated style on a few of the summary fields.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Part 4: Spatial Join, add polygon data to points</h2>
+                <p>This time we will add data to the Airbnb listings by which council district each falls into.</p>
+                <ol>
+                    <li>Open <strong>City Council Districts</strong> and <strong>airbnb-listings-20181107</strong> if they're not already open.</li>
+                    <li>Use <strong>Join attributes by location</strong> from the search bar in the bottom left of the window.</li>
+                    <li>Do the join with these settings:
+                        <ol>
+                            <li>Make the Airbnb listings the <strong>Input layer</strong>.</li>
+                            <li>Make the council districts the <strong>Join layer</strong>.</li>
+                            <li>Under <strong>Join type</strong> select </strong>Take attributes of the first located feature only</strong>.</li>
+                        </ol>
+                    </li>
+                    <li>Examine the resulting shapefile's attribute table.</li>
+                    <li>Style the resulting shapefile. For example, use a categorized style on council district number.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Part 5: More expressions</h2>
+                <ol>
+                    <li>Open <strong>ne_10m_admin_0_countries_lakes</strong>.</li>
+                    <li>Use <strong>Select by expression</strong> to try to select the following countries:
+                        <ol>
+                            <li><strong>ECONOMY</strong> is any of the emerging regions.</li>
+                            <li><strong>LASTCENSUS</strong> is before 2000.</li>
+                            <li><strong>SUBREGION</strong> is any of <strong>Caribbean</strong>, <strong>Central America</strong>, or <strong>South America</strong> with <strong>ECONOMY</strong> of developing region.</li>
+                        </ol>
+                    </li>
+                    <li>Experiment with a few more expressions.</li>
+                </ol>
+            </section>
+
+            <footer>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">SAVI 702</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ebrelsford.github.io/" property="cc:attributionName" rel="cc:attributionURL">Eric Brelsford</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </footer>
+        </main>
+    </body>
+</html>

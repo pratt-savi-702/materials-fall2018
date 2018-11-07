@@ -1,0 +1,495 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Class 6 | SAVI 702</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <link href="https://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans" rel="stylesheet" type="text/css">
+
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" />
+
+        <script src="../js/hammer.min.js"></script>
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <p>Welcome to Introduction to QGIS, Class 6</p>
+            <p>This is a web page that can be viewed as slides.</p>
+            <p>→ to move forward</p>
+            <p>← to go back</p>
+            <p>g to view grid</p>
+        </div>
+
+        <div class="slide">
+            <h1>Introduction to QGIS</h1>
+            <p>Class 6</p>
+        </div>
+
+        <div class="slide">
+            <h2>what do you need to <em>join</em> two datasets?</h2>
+        </div>
+
+        <div class="slide">
+            <h2>what is the difference between the decennial census and ACS?</h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide" style="background-image: url(img/pluto-bbl.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/pluto-bbl.png);">
+            <h2>MapPLUTO has a handy field called BBL</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/pluto-bbl.png);">
+            <h2>BBLs are unique identifiers for every parcel in NYC</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/pluto-bbl.png);">
+            <h2>BBL: borough, block, and lot number</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/pluto-bbl.png);">
+            <h2>2038610014</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/pluto-bbl.png);">
+            <h2>2</h2>
+            <h2>2: borough code (Bronx)</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/pluto-bbl.png);">
+            <h2>203861</h2>
+            <h2>3861: block number</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/pluto-bbl.png);">
+            <h2>2038610014</h2>
+            <h2>14: lot number</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/oasis-bbl.png);">
+            <a href="http://www.oasisnyc.net/map.aspx?zoomto=lot:2038610014" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/oil-boilers-bbls.png);">
+            <a href="https://data.cityofnewyork.us/Housing-Development/Oil-Boilers-Detailed-Fuel-Consumption-and-Building/jfzu-yy6n" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/oil-boilers-bbls.png);">
+            <h2>this spreadsheet has no coordinates, but you can join the BBLs</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/pluto-bbl.png);">
+            <h2>BBLs are <em>always</em> 10 digits</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/pluto-bbl.png);">
+            <h2>1 digit: borough code</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/pluto-bbl.png);">
+            <h2>1 digit: borough code</h2>
+            <h2>5 digits: block number</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/pluto-bbl.png);">
+            <h2>1 digit: borough code</h2>
+            <h2>5 digits: block number</h2>
+            <h2>4 digits: lot number</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/benchmarking-results.png);">
+            <a href="https://data.cityofnewyork.us/City-Government/NYC-Municipal-Building-Energy-Benchmarking-Results/hpid-63r5/data" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/benchmarking-results.png);">
+            <h2>this spreadsheet has no coordinates</h2>
+            <a href="https://data.cityofnewyork.us/City-Government/NYC-Municipal-Building-Energy-Benchmarking-Results/hpid-63r5/data" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/benchmarking-results.png);">
+            <h2>you can build BBLs if you need to</h2>
+            <a href="https://data.cityofnewyork.us/City-Government/NYC-Municipal-Building-Energy-Benchmarking-Results/hpid-63r5/data" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/bbl-take-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/bbl-take-1.png);">
+            <h2 style="font-size: 70px;"><code>"Borough" || "Block" || "Lot"</code></h2>
+            <h2>(don't use this, it won't work)</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/bbl-take-1.png);">
+            <h2><code>||</code> concatenates (adds) strings together</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/bbl-take-1.png);">
+            <h2>here we add the <code>Borough</code>, <code>Block</code>, and <code>Lot</code> fields together</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/bbl-take-1.png);">
+            <h2>but it's not ten digits long</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/bbl-take-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/bbl-take-2.png);">
+            <h2>you need to add <code>0</code>s to the left of the block and lot fields</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/bbl-take-2.png);">
+            <h2 style="font-size: 50px;"><code>"Borough" || lpad("Block" , 5, 0) || lpad("Lot", 4, 0)</code></h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 1</a></h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/field-types.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/field-types.png);">
+            <h2>in QGIS, the <em>type</em> of your field matters</h2>
+        </div>
+
+        <div class="slide">
+            <h2>fields have to be <em>integer</em>, <em>real</em>, <em>text</em>, or <em>date</em></h2>
+        </div>
+
+        <div class="slide">
+            <h2><em>integers</em> are numbers with no digits after the decimal</h2>
+        </div>
+
+        <div class="slide">
+            <h2><em>integer</em> examples: <code>5</code>, <code>243</code></h2>
+        </div>
+
+        <div class="slide">
+            <h2><em>reals</em> are numbers with digits after the decimal</h2>
+        </div>
+
+        <div class="slide">
+            <h2><em>real</em> examples: <code>0.0002</code>, <code>19.4</code></h2>
+        </div>
+
+        <div class="slide">
+            <h2><em>text</em> is a piece of text</h2>
+        </div>
+
+        <div class="slide">
+            <h2><em>text</em> examples: <code>ponies</code>, <code>Portugal</code></h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/alignment.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/alignment-numbers.png);">
+            <h2>numbers are aligned right</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/alignment-text.png);">
+            <h2>text is aligned left</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fields-numbers-text.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/fields-numbers-text.png);">
+            <h2>sometimes numbers are imported as text</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fields-numbers-text.png);">
+            <h2>this will keep you from performing numeric operations</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fields-numbers-text.png);">
+            <h2>like making a <em>graduated</em> style, or adding two numbers</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/conversion-functions.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/conversion-functions.png);">
+            <h2>the conversion functions will let you deal with this</h2>
+        </div>
+
+        <div class="slide">
+            <code>to_int( [field_name] )</code>
+        </div>
+
+        <div class="slide">
+            <code>to_int( [field_name] )</code>
+            <h2>converts text to integers</h2>
+        </div>
+
+        <div class="slide">
+            <h2>for example:</h2>
+            <code>to_int( "sat_takers" )</code>
+        </div>
+
+        <div class="slide">
+            <code>to_real( [field_name] )</code>
+        </div>
+
+        <div class="slide">
+            <code>to_real( [field_name] )</code>
+            <h2>converts text to decimal numbers</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/convert-example.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/convert-example-fail.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/convert-example-fail.png);">
+            <h2>this isn't going to work if there is anything non-numeric in the column</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/convert-example-fail.png);">
+            <h2>like "Not Available"</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/convert-example-fail.png);">
+            <h2>or if the numbers contain commas</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/convert_success.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/format_csv.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/format_csv.png);">
+            <h2>you could fix this in Excel or something similar</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/format_csv.png);">
+            <h2>but sometimes you already have the data in QGIS and want to fix it there</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/replace-function.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/replace-function.png);">
+            <h2>you could use <code>replace</code> to replace commas with '' (the empty string) to remove them</h2>
+        </div>
+
+        <div class="slide">
+            <h2>if you want to completely remove some values like "Not Available", two steps:</h2>
+        </div>
+
+        <div class="slide">
+            <h2>1. select all the features with that value</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/select-not-available.png);">
+        </div>
+
+        <div class="slide">
+            <h2>2. set the values in that column to NULL for only the selected features</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/set-null.png);">
+        </div>
+
+        <div class="slide">
+            <h2>What is NULL?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mr-null.png);">
+            <a href="http://www.wired.com/2015/11/null/" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mr-null.png);">
+            <h2>a special value in most computing environments, including QGIS</h2>
+            <a href="http://www.wired.com/2015/11/null/" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mr-null.png);">
+            <h2>NULL means <em>empty</em></h2>
+            <a href="http://www.wired.com/2015/11/null/" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mr-null.png);">
+            <h2>for numbers, NULL doesn't mean <em>zero</em>, it means the absence of a number</h2>
+            <a href="http://www.wired.com/2015/11/null/" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/field-is-null.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/field-is-null.png);">
+            <h2>to check for null, use <code>IS NULL</code> and <code>IS NOT NULL</code></h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 2</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>attribute joins combine data based on a common column</h2>
+        </div>
+
+        <div class="slide">
+            <h2>we can also join based on a common <em>geography</em></h2>
+        </div>
+
+        <div class="slide">
+            <h2>this will help us summarize data for points in a polygon</h2>
+        </div>
+
+        <div class="slide">
+            <h2>spatial joins</h2>
+            <p>when you have layers that both have geographic features</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-join-by-location.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-join-by-location-output.png);">
+        </div>
+
+        <div class="slide">
+            <p>Works best when you have:</p>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>polygons that don't overlap (such as school districts or census tracts) and</li>
+                <li>points or smaller polygons that fall within them</li>
+            </ul>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-join-by-location.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-join-by-location.png);">
+            <h2>the <em>input layer</em> is where you want the data to be added</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-join-by-location.png);">
+            <h2>the <em>join layer</em> is where you want the data to come from</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-join-by-location-fields.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-join-by-location-fields.png);">
+            <h2>select fields to summarize from the join layer</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-join-by-location-summaries.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-join-by-location-summaries.png);">
+            <h2>select summaries to calculate for each field</h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 3</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>you can also use spatial joins to add data to points</h2>
+        </div>
+
+        <div class="slide">
+            <h2>for example, if you need to know which district each point is in</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/spatial-join-reverse.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/spatial-join-reverse.png);">
+            <h2>as before, the <em>input layer</em> is where you want the data to be added</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/spatial-join-reverse.png);">
+            <h2>also as before, the <em>join layer</em> is where you want the data to come from</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/reverse-spatial-join-result.png);">
+        </div>
+
+        <div class="slide">
+            <h2>one reason this can be useful is if you're leaving a GIS</h2>
+        </div>
+
+        <div class="slide">
+            <h2>you can save as a CSV and use in Excel or similar</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/export-csv.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 4</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>more expressions</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/string-in.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/string-in.png);">
+            <h2><code>IN</code>: let the field match any of these values</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/string-or.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/string-or.png);">
+            <h2><code>OR</code>: either condition can be true</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/condition-and.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/condition-and.png);">
+            <h2><code>AND</code>: both conditions must be true</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/conditions-or-and.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/conditions-or-and.png);">
+            <h2>you can combine <code>OR</code> and <code>AND</code>, but be careful</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/conditions-or-and-parens.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/conditions-or-and-parens.png);">
+            <h2>use parentheses if you're not sure how they will work</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/conditions-not.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/conditions-not.png);">
+            <h2><code>NOT</code> will invert your conditions</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/conditions-not.png);">
+            <h2>I recommend using parentheses anytime you use <code>NOT</code></h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 5</a></h2>
+        </div>
+
+    </body>
+</html>
