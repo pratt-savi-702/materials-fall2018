@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>In-class Exercises | SAVI 702</title>
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya Sans' rel='stylesheet' type='text/css'>
+        <link href="../css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="../css/inclass.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <a href="..">&larr; SAVI 702</a>
+                <h1>In-class Exercises</h1>
+            </header>
+
+            <section>
+                <h2>Part 1: Clipping and Buffering</h2>
+                <ol>
+                    <li>In QGIS, open <code>TRI_2017_NY.csv</code> in <a href="data/savi702-class7-data.zip">today's data</a>. You can learn more about it at <a href="http://www2.epa.gov/toxics-release-inventory-tri-program/tri-basic-data-files-calendar-years-1987-2014">the EPA's download page</a> for the data.</li>
+                    <li>Also open the <code>nybb</code> (borough boundaries) shapefile.</li>
+                    <li>Under <strong>Vector &gt; Geoprocessing Tools &gt; Clip</strong>, clip the TRI data to the borough boundaries. The result should be a new shapefile with <strong>only</strong> TRIs in the five boroughs.</li>
+                    <li>Reproject the clipped version of <code>TRI_2017_NY</code> to <strong>2263</strong> so we know the units will be feet. Either right-click the layer and export with the correct CRS or use <strong>Vector &gt; Data Management Tools &gt; Reproject layer</strong>.</li>
+                    <li>Now buffer the data from the previous step by 1000 feet (<strong>Vector &gt; Geoprocessing Tools &gt; Buffer</strong>). Do not check <strong>Dissolve result</strong>.</li>
+                    <li>Now add the <code>Public_School_Locations</code> layer to QGIS.</li>
+                    <li>Select by location (<strong>Vector &gt; Research &gt; Select by Location</strong>) to find public schools within 1000 feet of a TRI feature.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Part 2: Overlay Operations</h2>
+                <ol>
+                    <li>Use the <code>Seasnakes</code> data included in the zipfile you downloaded. The data is a small extract of the sea snakes data available at <a href="http://www.iucnredlist.org/technical-documents/spatial-data">IUCN</a>.</li>
+                    <li>Use <strong>Vector &gt; Geoprocessing Tools &gt; Intersect</strong> to find only the places where the habitats of <code>snake1</code> and <code>snake2</code> overlap.</li>
+                    <li>Use <strong>Vector &gt; Geoprocessing Tools &gt; Union</strong> to find places where the habitats of <code>snake1</code> and <code>snake3</code> overlap and the places where each exists on its own. Style each feature differently using rule-based styles.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Part 3: Geocoding</h2>
+                <ol>
+                    <li>Open <code>Queens_Library_Branches.csv</code> in Excel.</li>
+                    <li>Install the <strong>MMQGIS</strong> QGIS plugin if you have not.</li>
+                    <li>Geocode the spreadsheet in QGIS by going to <strong>MMQGIS &gt; Geocode &gt; Geocode CSV with Google / OpenStreetMap</strong>. For <strong>Web Service</strong>, use <strong>OpenStreetMap / Nominatim</strong>. Don't forget to pick a place to save your shapefile and "not found" spreadsheet.</li>
+                    <li>Geocode the spreadsheet using the <a href="https://geocoding.geo.census.gov/geocoder/locations/addressbatch?form">Census batch geocoder</a>. You will want to edit the spreadsheet before uploading it to the Census geocoder so it matches the format given by the <a href="https://geocoding.geo.census.gov/geocoder/Addresses.csv">sample CSV</a>.</li>
+                </ol>
+            </section>
+
+            <footer>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">SAVI 702</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ebrelsford.github.io/" property="cc:attributionName" rel="cc:attributionURL">Eric Brelsford</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </footer>
+        </main>
+    </body>
+</html>
