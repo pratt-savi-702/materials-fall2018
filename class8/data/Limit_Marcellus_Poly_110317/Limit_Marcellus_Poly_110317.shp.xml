@@ -1,0 +1,181 @@
+<metadata>
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<title>Extent of Pennsylvania Underlain by Marcellus Shale</title>
+				<geoform>vector digital data</geoform>
+				<onlink></onlink>
+			</citeinfo>
+		</citation>
+		<descript>
+			<abstract>This data set is derived from the 1:250000 digital bedrock Geology of Pennsylvania (http://www.dcnr.state.pa.us/topogeo/gismaps/digital.aspx). The polygons herein were created by dissolving/merging the polygons for the bedrock geologic units that were younger (overlay) than the Marcellus formation.</abstract>
+			<purpose>This data set is offered as a representation of the portion of Pennsylvania which is potentailly underlain by the Marcellus Shale or its stratigraphic equivalent.</purpose>
+		</descript>
+		<spdom>
+			<bounding>
+				<westbc>-80.617290</westbc>
+				<eastbc>-74.645113</eastbc>
+				<northbc>42.283041</northbc>
+				<southbc>39.676536</southbc>
+			</bounding>
+		</spdom>
+		<keywords/>
+		<accconst>None</accconst>
+		<useconst>No warranty:
+These data files and accompanying documentation are provided “as is,” and the user assumes the entire risk as to their quality and performance. 
+The Commonwealth of Pennsylvania makes no guarantee or warranty concerning the accuracy of information contained in the geographic data or accompanying documentation. The Commonwealth of Pennsylvania further makes no warranties, either expressed or implied, as to any other matter whatsoever, including, without limitation, the completeness or condition of the product, or its fitness for any particular purpose. The burden for determining fitness for use lies entirely with the user. 
+Although these data have been processed successfully on a computer system at the Bureau of Topographic and Geologic Survey, the Commonwealth of Pennsylvania makes no warranty, expressed or implied, regarding the use of the data files or accompanying documentation on any other computer system, nor does the act of distribution constitute any such warranty. 
+
+Limitation of Liability:
+The user shall save the Commonwealth of Pennsylvania harmless from any suits, claims, or actions arising out of the use of or any defect in the data files or accompanying documentation. 
+The Commonwealth of Pennsylvania assumes no legal liability for the accuracy, completeness, or usefulness of the data files and accompanying documentation. In no event shall the Commonwealth of Pennsylvania have any liability whatsoever for payment of any consequential, incidental, indirect, special, or tort damages of any kind, including, but not limited to, any loss of profits arising out of use of or reliance on the geographic data. 
+
+Use and Access Constraints:
+Not for commercial resale. 
+These datasets are not designed for use as a primary regulatory tool in permitting and siting decisions. This is public information and, as such, it may be used as a reference source and may be interpreted by organizations, agencies, units of government, or others based on needs; however, each user is responsible for the appropriate application of the data. Federal, state, or local regulatory bodies are not to reassign to the Bureau of Topographic and Geologic Survey any authority for the decisions they make using these datasets. 
+The datasets are not meant for site-specific analysis or for use at finer (i.e., larger, more detailed) scales. Users are not to misrepresent the datasets by presenting them at scales for which they are not intended, nor to imply that presentation at such scales is approved by the Bureau of Topographic and Geologic Survey.</useconst>
+		<datacred>The 1:250000 digital bedrock geology was compiled by Miles, C. E., and Whitfield, T. G. (compilers, 2001, Bedrock geology of Pennsylvania: Pennsylvania Geological Survey, 4th ser., dataset, scale 1:250,000) from the published 1980 state geologic map.  The processing of that data into the polygons included here was done by Michael E. Moore.</datacred>
+		<native>Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 3; ESRI ArcGIS 10.0.0.2414</native>
+	</idinfo>
+	<spdoinfo>
+		<direct>Vector</direct>
+		<ptvctinf>
+			<sdtsterm>
+				<sdtstype>GT-polygon composed of chains</sdtstype>
+				<ptvctcnt>15</ptvctcnt>
+			</sdtsterm>
+		</ptvctinf>
+	</spdoinfo>
+	<spref>
+		<horizsys>
+			<planar>
+				<mapproj>
+					<mapprojn>NAD 1983 Pennsylvania DCNR Custom Feet</mapprojn>
+					<lambertc>
+						<stdparll>40.25</stdparll>
+						<stdparll>41.5</stdparll>
+						<longcm>-78.0</longcm>
+						<latprjo>39.0</latprjo>
+						<feast>0.0</feast>
+						<fnorth>0.0</fnorth>
+					</lambertc>
+				</mapproj>
+				<planci>
+					<plance>coordinate pair</plance>
+					<coordrep>
+						<absres>0.000000026869262370610162</absres>
+						<ordres>0.000000026869262370610162</ordres>
+					</coordrep>
+					<plandu>Foot_US</plandu>
+				</planci>
+			</planar>
+			<geodetic>
+				<horizdn>D North American 1983</horizdn>
+				<ellips>GRS 1980</ellips>
+				<semiaxis>6378137.0</semiaxis>
+				<denflat>298.257222101</denflat>
+			</geodetic>
+		</horizsys>
+	</spref>
+	<eainfo>
+		<detailed>
+			<enttyp>
+				<enttypl>Limit_Marcellus_Poly_110317</enttypl>
+			</enttyp>
+			<attr>
+				<attrlabl>FID</attrlabl>
+				<attrdef>Internal feature number.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>Sequential unique whole numbers that are automatically generated.</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>OBJECTID</attrlabl>
+				<attrdef>Internal feature number.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>Sequential unique whole numbers that are automatically generated.</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>Shape</attrlabl>
+				<attrdef>Feature geometry.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>Coordinates defining the features.</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>Poly_ID</attrlabl>
+			</attr>
+			<attr>
+				<attrlabl>Shape_Leng</attrlabl>
+			</attr>
+			<attr>
+				<attrlabl>Shape_Area</attrlabl>
+				<attrdef>Area of feature in internal units squared.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>Positive real numbers that are automatically generated.</udom>
+				</attrdomv>
+			</attr>
+		</detailed>
+	</eainfo>
+	<distinfo>
+		<distliab>See access and use constraints information.</distliab>
+	</distinfo>
+	<metainfo>
+		<metd>20110318</metd>
+		<metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+		<metstdv>FGDC-STD-001-1998</metstdv>
+	</metainfo>
+	<Binary><Thumbnail><Data EsriPropertyType="PictureX">/9j/4AAQSkZJRgABAQEAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
+HBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIy
+MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCACFAMgDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iii
+gAoooJABJOAKACio4p4ps+U4fHcdPz79KkoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooAKKKKACiiqdxGstyVkG5AgIU9Mknt07VnVqKnByY0riy3m9GW0xLJjhv4Afc9/oM1BDbS
+CNRd3L3LKScuoAzn0AqzRXk1cXOppsjRRSFg/wCPiX/cX+bVYqm0Ss+7LgkY+VyP5H3o8of35f8A
+v63+NdFLGQhBRaehLi2y5RVPyh/fl/7+t/jR5Q/vy/8Afxv8a0+v0+zFyMuUVT8sf35f+/jf40eW
+P78v/fxv8af1+n2f9fMORlyiqflj+/L/AN/G/wAaPLH9+X/v43+NH1+n2f8AXzDkZcoqn5Y/vy/9
+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</Data></Thumbnail></Binary><Esri><ModDate>20110318</ModDate><ModTime>08053900</ModTime></Esri><mdDateSt Sync="TRUE">20110318</mdDateSt></metadata>

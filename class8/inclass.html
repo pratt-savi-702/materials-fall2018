@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>In-class Exercises | SAVI 702</title>
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya Sans' rel='stylesheet' type='text/css'>
+        <link href="../css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="../css/inclass.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <a href="..">&larr; SAVI 702</a>
+                <h1>In-class Exercises</h1>
+            </header>
+
+            <section>
+                <h2>Part 1: Combining Geoprocessing Operations</h2>
+                <ol>
+                    <li>Download <a href="data/savi702-class8-data.zip">today's data</a></li>
+                    <li>Open the <strong>PaCounty2015_01</strong> and <strong>DCNR_StateParks201308</strong> shapefiles.</li>
+                    <li>Open the CSV <strong>Oil_Gas_Well_Historical_Production_Report</strong>.</li>
+                    <li>Reproject the wells layer. Use State Plane Pennsylvania North (3650).</li>
+                    <li><strong>Buffer</strong> the wells by two miles and dissolve the results.</li>
+                    <li>Use <strong>Select by location</strong> to determine how many state parks are within the buffered area around the wells.</li>
+                    <li><strong>Intersect</strong> the counties and the wells buffer to find the parts of counties that are within two miles of a well.</li>
+                    <li>Calculate the area of the dissolved features. This is the area of county within two miles of a well.</li>
+                    <li>Join the area from the previous step to the original counties layer.</li>
+                    <li>Style the counties by the percentage of area within two miles of a well.</li>
+                    <li>If you have time, use a similar process to the one above to style the counties by percentage of area within the Marcellus Shale (<strong>Limit_Marcellus_Poly_110317</strong>). You wouldn't need to buffer the shale in this case.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Part 2: Model builder</h2>
+                <ol>
+                    <li>Make a model with the graphical modeler (<strong>Processing &gt; Graphical Modeler</strong>) that:
+                        <ol>
+                            <li>takes an input vector layer,</li>
+                            <li>reprojects it into 2263, and</li>
+                            <li>buffers it by 2000 feet.</li>
+                        </ol>
+                    </li>
+                    <li>Test the model with <strong>Public_School_Locations</strong>, included in today's data.</li>
+                    <li>If you have time, add another input (for example, a number or another layer) and another algorithm to your model.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Part 3: Hexbins</h2>
+                <p>Use hexbins to look at the density of <strong>uber_2014_04_01</strong> or <strong>Graffiti_Locations</strong>.</p>
+                <ol>
+                    <li>Open the points file of your choosing (<strong>uber_2014_04_01</strong> or <strong>Graffiti_Locations</strong>).</li>
+                    <li>Move your project into a projection where you know the units (eg, <strong>2263</strong> is in feet).</li>
+                    <li>Use the QGIS search bar to search for <strong>Create grid</strong>.</li>
+                    <li>Select <strong>Hexagon</strong> for the grid type, set the grid extent to <strong>Use layer/canvas extent &gt; Use extent from (your layer name)</strong>.</li>
+                    <li>Set the <strong>Horizontal spacing</strong> and <strong>Vertical spacing</strong> to 1000 feet to start.</li>
+                    <li>Pick a suitable place to save to and create the grid.</li>
+                    <li>If the grid's hexagons are too large or too small, repeat the process but change the <strong>Horizontal spacing</strong> or <strong>Vertical spacing</strong>. These determine the height and width of the hexagons.</li>
+                    <li>Count the number of points in each hexagon and make a choropleth with the resulting layer.</li>
+                </ol>
+            </section>
+
+            <footer>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">SAVI 702</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ebrelsford.github.io/" property="cc:attributionName" rel="cc:attributionURL">Eric Brelsford</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </footer>
+        </main>
+    </body>
+</html>

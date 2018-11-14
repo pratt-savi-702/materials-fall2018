@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Class 8 | SAVI 702</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <link href="https://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans" rel="stylesheet" type="text/css">
+
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" />
+
+        <script src="../js/hammer.min.js"></script>
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <p>Welcome to Introduction to QGIS, Class 8</p>
+            <p>This is a web page that can be viewed as slides.</p>
+            <p>→ to move forward</p>
+            <p>← to go back</p>
+            <p>g to view grid</p>
+        </div>
+
+        <div class="slide">
+            <h1>Introduction to QGIS</h1>
+            <p>Class 8</p>
+        </div>
+
+        <div class="slide">
+            <h2>11/19: class is meeting</h2>
+            <h2>11/21: class NOT meeting</h2>
+        </div>
+
+        <div class="slide">
+            <h2>what is <em>geocoding</em>?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geocoding.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/swarm.jpg); background-size: 50%;">
+        </div>
+
+        <div class="slide" style="background-image: url(img/twitter_reverse_geocoding.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/instagram_reverse_geocoding.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/flickr_reverse_geocoding.png);">
+        </div>
+
+        <div class="slide">
+            <p>"Never mind so-called disputed places (Kashmir, the West Bank, Cyprus, etc.) all neighbourhoods are 'disputed' around the edges..."</p>
+        </div>
+
+        <div class="slide">
+            <p>"... Our experience has been that there are few better ways to pick a fight than to tell someone what neighbourhood they are in (and being wrong)."</p>
+            <p>
+                <a href="http://lists.w3.org/Archives/Public/public-geolocation/2008Jun/0059.html">Aaron Straup Cope</a>
+            </p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cope-post-alpha.jpg);">
+            <a class="source" href="http://www.flickr.com/photos/straup/2884390995/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cope-texas-alpha.png);">
+            <a class="source" href="http://www.flickr.com/photos/straup/2971287541/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/alpha_neighborhoods.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/twofishes-soho.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/twofishes-westvillage.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyt-google-maps-neighborhood.png);">
+            <a class="source" href="https://www.nytimes.com/2018/08/02/technology/google-maps-neighborhood-names.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyt-google-maps-neighborhood-3.png);">
+            <a class="source" href="https://www.nytimes.com/2018/08/02/technology/google-maps-neighborhood-names.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyt-google-maps-neighborhood-2.png);">
+            <a class="source" href="https://www.nytimes.com/2018/08/02/technology/google-maps-neighborhood-names.html">source</a>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide" style="background-image: url(img/leader-lines.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/leader-lines-style-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/leader-lines-style-1.png);">
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>solving problems with geoprocessing</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/subway-entrances-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/subway-entrances-0.png);">
+            <h2>how transit-accessible is each council district?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/subway-entrances-0.png);">
+            <h2>what percentage, by area, is within walking distance of a subway entrance?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/subway-entrances-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/subway-entrances-1.png);">
+            <h2>buffer</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/subway-entrances-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/subway-entrances-2.png);">
+            <h2>intersect<h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/subway-entrances-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/subway-entrances-3.png);">
+            <h2>calculate the area of the interesect polygons</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/subway-entrances-4.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/subway-entrances-4.png);">
+            <h2>join the intersected area field back onto the original council districts</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/subway-entrances-5.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/subway-entrances-6.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/subway-entrances-6.png);">
+            <h2>calculate the percent coverage</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/subway-entrances-7.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/subway-entrances-8.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 1</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>graphical modeler</h2>
+        </div>
+
+        <div class="slide">
+            <h2>graphical modeler: good for repetitive tasks</h2>
+        </div>
+
+        <div class="slide">
+            <h2>you connect a series of <em>inputs</em> and <em>algorithms</em> to get something done</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/graphical-modeler-1.png); background-size: 50%;">
+        </div>
+
+        <div class="slide" style="background-image: url(img/graphical-modeler-inputs.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/graphical-modeler-inputs.png);">
+            <h2>inputs: usually a vector layer (eg a shapefile)</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/graphical-modeler-inputs.png);">
+            <h2>inputs: can also be numbers and text</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/graphical-modeler-algorithms.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/graphical-modeler-algorithms.png);">
+            <h2>algorithms: an action you would take in QGIS</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/graphical-modeler-algorithms.png);">
+            <h2>algorithms: often take inputs and create outputs</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/graphical-modeler-inputs.png);">
+            <h2>first, build a model</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/graphical-modeler-inputs.png);">
+            <h2>drag an input onto the canvas</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/graphical-modeler-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/graphical-modeler-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/graphical-modeler-4.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/graphical-modeler-5.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/graphical-modeler-7.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/graphical-modeler-8.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/graphical-modeler-9.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/graphical-modeler-10.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/graphical-modeler-10.png);">
+            <h2>give it a good name and save it</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/graphical-modeler-11.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/graphical-modeler-11.png);">
+            <h2>once you save, the model is available in the search bar</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/graphical-modeler-12.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 2</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide" style="background-image: url(img/toomanypoints_wells.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/toomanypoints_airbnb.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/toomanypoints_airbnb.png);">
+            <h2>sometimes you have too many points</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/toomanypoints_airbnb.png);">
+            <h2>sometimes you want to see density without using shapes like census tracts</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stop_frisk.png);">
+            <a class="source" href="http://freecity.commons.gc.cuny.edu/2013/12/02/maps-of-nypd-stops-2011/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tree_density.png);">
+            <a class="source" href="http://anitagraser.com/2012/03/04/mapping-density-with-hexagonal-grids/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-create-grid.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-grid.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 3</a></h2>
+        </div>
+
+    </body>
+</html>

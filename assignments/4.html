@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Assignment 4 | SAVI 702</title>
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya Sans' rel='stylesheet' type='text/css'>
+        <link href="../css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="../css/inclass.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+        <header>
+            <a href="..">&larr; SAVI 702</a>
+            <h1>Assignment 4</h1>
+        </header>
+
+        <section>
+            <p><strong>Due November 19 at 6pm</strong></p>
+        </section>
+
+        <section>
+            <h2>Geoprocessing</h2>
+            <p>Geoprocessing tools give you the means to overlay multiple vector layers in order to modify the layers and potentially combine them. You are most likely going to find the following geoprocessing functions to be the most useful:</p>
+            <ul>
+                <li>clipping</li>
+                <li>buffers</li>
+                <li>difference</li>
+            </ul>
+            <p>Buffers can be especially useful when talking about <em>proximity</em>, and you'll probably find these useful in the following assignment from your council member:</p>
+            <div style="background: #ddd; padding: 15px;">
+                <p>Hi GIS pro,</p>
+                <p>A group in our district arguing for safer streets is looking for more detail about <a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Motor-Vehicle-Collisions/h9gi-nx95">motor vehicle collisions</a> for the past year. I was thinking we could either highlight the collisions near <a href="https://data.cityofnewyork.us/Education/School-Point-Locations/jfju-ynrr">schools</a> or <a href="https://data.cityofnewyork.us/Transportation/Bicycle-Routes/7vsa-caz7">bike lanes</a>. I trust you to pick the one you find most illuminating. In addition to highlighting these collisions I'd like to answer these questions:</p>
+                <ul>
+                    <li>What percentage of the crashes in our district happened near schools or bike lanes (again, your choice)?</li>
+                    <li>How many injuries and deaths happened as a result of these crashes?</li>
+                </ul>
+                <p>Thanks for all your help!</p>
+            </div>
+            <p>Buffer the schools (I'd start with 500 feet) or bike lanes (I'd start with 25 feet) and use <strong>Select by Location</strong> to find the collisions in those buffers. You'll want to filter the collisions by time range before downloading them, and feel free to reuse other map elements from previous work as they're useful.</p>
+        </section>
+
+        <section>
+            <h2>Submitting your work</h2>
+            <p>This assignment is due <strong>November 19 at 6pm</strong>.</p>
+            <p>Submit a link and upload a document at <a href="https://docs.google.com/forms/d/e/1FAIpQLSdJCmz3jrt5nFIJGEZeSVHBDYANsEw4niID2ZXxIbmCcCtw2w/viewform">this form</a>.</p>
+            <p>Please include a short paragraph response or summary of your work.</p>
+        </section>
+
+        <footer>
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">SAVI 702</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ebrelsford.github.io/" property="cc:attributionName" rel="cc:attributionURL">Eric Brelsford</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+        </footer>
+        </main>
+    </body>
+</html>
