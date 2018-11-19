@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>In-class Exercises | SAVI 702</title>
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya Sans' rel='stylesheet' type='text/css'>
+        <link href="../css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="../css/inclass.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <a href="..">&larr; SAVI 702</a>
+                <h1>In-class Exercises</h1>
+            </header>
+
+            <section>
+                <h2>Part 1: Hexbins</h2>
+                <p>Use hexbins to look at the density of <strong>uber_2014_04_01</strong> or <strong>Graffiti_Locations</strong>.</p>
+                <ol>
+                    <li>Download <a href="data/savi702-class9-data.zip">today's data</a>.</li>
+                    <li>Open the points file of your choosing (<strong>uber_2014_04_01</strong> or <strong>Graffiti_Locations</strong>). If you are using a CSV, you're recommended to export it to a shapefile first as it will calculate more quickly.</li>
+                    <li>Move your project into a projection where you know the units (eg, <strong>2263</strong> is in feet).</li>
+                    <li>Use the QGIS search bar to search for <strong>Create grid</strong>.</li>
+                    <li>Select <strong>Hexagon</strong> for the grid type, set the grid extent to <strong>Use layer/canvas extent &gt; Use extent from (your layer name)</strong>.</li>
+                    <li>Set the <strong>Horizontal spacing</strong> and <strong>Vertical spacing</strong> to 1000 feet to start.</li>
+                    <li>Pick a suitable place to save to and create the grid.</li>
+                    <li>If the grid's hexagons are too large or too small, repeat the process but change the <strong>Horizontal spacing</strong> or <strong>Vertical spacing</strong>. These determine the height and width of the hexagons.</li>
+                    <li>Count the number of points in each hexagon and make a choropleth with the resulting layer.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Part 2: Heatmaps</h2>
+                <p>Using the same points layer as last time, make a heatmap.</p>
+                <ol>
+                    <li>Search for <strong>Heatmap (Kernel Density Estimation)</strong> in the QGIS search box.</li>
+                    <li>Set the radius to 2000 feet.</li>
+                    <li>Set the rows to 3000. This is the number of rows of pixels in the resulting raster. The columns should update automatically.</li>
+                    <li>Style the output raster with a <strong>Singleband Pseudocolor</strong> render type and select a color ramp.</li>
+                    <li>Create a few more heatmaps with varying radii and resolution (rows and columns).</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Part 3: Dot maps</h2>
+                <ol>
+                    <li>Join the shapefile in <strong>NTAs</strong> with the spreadsheet <strong>demo_2016acs5yr_nta</strong>.</li>
+                    <li>Make a dot map of race using the NTA data. We'll look at these values under <strong>Mutually Exclusive Race/Hispanic Origin</strong> in the data dictionary:
+                        <ul>
+                            <li>Hsp1E</li>
+                            <li>WtNHE</li>
+                            <li>BlNHE</li>
+                            <li>AIANNHE</li>
+                            <li>AsnNHE</li>
+                            <li>NHPINHE</li>
+                            <li>OthNHE</li>
+                            <li>Rc2plNHE</li>
+                        </ul>
+                    </li>
+                    <li>For each attribute, use <strong>Random points inside polygons</strong> to make a layer of points with one point per 500 people.</li>
+                    <li>Rename the layers to keep track of them and style each layer.</li>
+                    <li>Keep the joined layer for the next exercise.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Part 4: Diagrams</h2>
+                <ol>
+                    <li>Continue with the joined layer from the previous exercise.</li>
+                    <li>Open the resulting layer's properties and go to the <strong>Diagrams</strong> tab.</li>
+                    <li>Create pie chart diagrams comparing the male and female populations by NTA by selecting <strong>Pie chart</strong> in the dropdown at the top of the dialog and adding <strong>MaleE</strong> and <strong>FemE</strong> in the <strong>Attributes</strong> area.</li>
+                    <li>Customize the styles for the pie charts.</li>
+                    <li>Duplicate the layer and make another pie chart diagram, this time using the values under <strong>Mutually Exclusive Race/Hispanic Origin</strong> in the data dictionary:
+                        <ul>
+                            <li>Hsp1E</li>
+                            <li>WtNHE</li>
+                            <li>BlNHE</li>
+                            <li>AIANNHE</li>
+                            <li>AsnNHE</li>
+                            <li>NHPINHE</li>
+                            <li>OthNHE</li>
+                            <li>Rc2plNHE</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+
+            <footer>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">SAVI 702</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ebrelsford.github.io/" property="cc:attributionName" rel="cc:attributionURL">Eric Brelsford</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </footer>
+        </main>
+    </body>
+</html>

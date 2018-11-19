@@ -1,0 +1,403 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Class 9 | SAVI 702</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <link href="https://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans" rel="stylesheet" type="text/css">
+
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" />
+
+        <script src="../js/hammer.min.js"></script>
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <p>Welcome to Introduction to QGIS, Class 9</p>
+            <p>This is a web page that can be viewed as slides.</p>
+            <p>→ to move forward</p>
+            <p>← to go back</p>
+            <p>g to view grid</p>
+        </div>
+
+        <div class="slide">
+            <h1>Introduction to QGIS</h1>
+            <p>Class 9</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/toomanypoints_wells.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/toomanypoints_airbnb.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/toomanypoints_airbnb.png);">
+            <h2>sometimes you have too many points</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/toomanypoints_airbnb.png);">
+            <h2>sometimes you want to see density without using shapes like census tracts</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stop_frisk.png);">
+            <a class="source" href="http://freecity.commons.gc.cuny.edu/2013/12/02/maps-of-nypd-stops-2011/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tree_density.png);">
+            <a class="source" href="http://anitagraser.com/2012/03/04/mapping-density-with-hexagonal-grids/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-create-grid.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-grid.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 1</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>heatmaps</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/weather_map.png);">
+            <a class="source" href="http://forecast.io/atlas/#temperature-north_america">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/weather_map.png);">
+            <h2>heatmaps attempt to show probability over an area</h2>
+            <a class="source" href="http://forecast.io/atlas/#temperature-north_america">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/taxi_heatmap.png);">
+            <a class="source" href="https://www.mapbox.com/blog/nyc-taxi/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/taxi_heatmap2.png);">
+            <a class="source" href="https://www.mapbox.com/blog/nyc-taxi/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/profane_mountains.png);">
+            <a class="source" href="https://cartastrophe.wordpress.com/2011/01/24/no-swearing-in-utah/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/australia-heatmap.png);">
+            <a class="source" href="http://www.chidgilovitz.com/heatmap-of-threatened-plant-species-of-australia/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/australia-heatmap-2.png);">
+            <a class="source" href="http://www.chidgilovitz.com/heatmap-of-threatened-plant-species-of-australia/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/heatmap-grid.png);">
+            <a class="source" href="http://cartographicperspectives.org/index.php/journal/article/view/cp80-deboer/1420">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/heatmap-grid.png);">
+            <h2>heatmaps look at the covered area as a raster made of pixels</h2>
+            <a class="source" href="http://cartographicperspectives.org/index.php/journal/article/view/cp80-deboer/1420">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>there are a variety of methods for giving values to pixels</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/kernels.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 2</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide" style="background-image: url(img/qgis-point-cluster.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-point-cluster.png);">
+            <h2>point cluster</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-point-cluster.png);">
+            <h2>combines nearby points into one point, shows the number of points</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-point-displacement.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-point-displacement.png);">
+            <h2>point displacement</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-point-displacement.png);">
+            <h2>rearranges nearby and overlapping points to make them all visible</h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide" style="background-image: url(img/race-census-blocks.png);">
+            <a class="source" href="https://www.nationalgeographic.com/magazine/2018/10/diversity-race-ethnicity-united-states-america-interactive-map/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/racial-dot-map.png);">
+            <a class="source" href="https://demographics.virginia.edu/DotMap/index.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/onesoil-map.png);">
+            <a class="source" href="https://map.onesoil.ai/2016/es/castile-and-leon#6.09/41.294/-3.711">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/radical-cartography-chicago.png);">
+            <a class="source" href="http://www.radicalcartography.net/chicagodots_race_big.jpg">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/radical-cartography-chicago-zoom.png);">
+            <a class="source" href="http://www.radicalcartography.net/chicagodots_race_big.jpg">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dasymetric-before.png);">
+            <a class="source" href="http://uxblog.idvsolutions.com/2013/10/dasymetric-dot-density-and-uncanny.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dasymetric-after.png);">
+            <a class="source" href="http://uxblog.idvsolutions.com/2013/10/dasymetric-dot-density-and-uncanny.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dasymetric-after.png);">
+            <h2>dasymetric dot density</h2>
+            <a class="source" href="http://uxblog.idvsolutions.com/2013/10/dasymetric-dot-density-and-uncanny.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-dot-map.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-random-points.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 3</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>diagrams in QGIS</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-pie-charts.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-bar-charts.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-proportional-pie-charts.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 4</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>Urban Reviewer</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/urban-reviewer-full.png);">
+            <a href="http://urbanreviewer.org" target="_blank">urban reviewer</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/596.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/596-signs.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/596-rockaways.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/edgemere-urban-renewal-park-streetview.png);">
+            <h2>
+                <a href="https://www.google.com/maps/place/Edgemere+Urban+Renewal+Park/@40.595588,-73.776975,3a,75y,172.62h,90t/data=!3m4!1e1!3m2!1sZgWcG17VxRvOezZpdWXGkA!2e0!4m6!1m3!3m2!1s0x0:0xae6844ceae037acd!2sEdgemere+Urban+Renewal+Park!3m1!1s0x0:0xae6844ceae037acd!6m1!1e1" target="_blank">Edgemere Urban Renewal Park</a>
+            </h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/edgemere-urban-renewal-park-signs.jpg);">
+            <a class="source" href="http://596acres.org/en/lot/4158370033/" target="_blank">
+                596 Acres
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/edgemere-urban-renewal-park-signs-zoom.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/edgemere-urban-renewal-park-signs-zoom.jpg);">
+            <h2>call Parks and say "where's our park?"</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/edgemere-urban-renewal-park.png);">
+            <h2>
+                <a href="https://www.google.com/maps/place/Edgemere+Urban+Renewal+Park/@40.595588,-73.776975,17z/data=!4m6!1m3!3m2!1s0x0:0xae6844ceae037acd!2sEdgemere+Urban+Renewal+Park!3m1!1s0x0:0xae6844ceae037acd" target="_blank">Edgemere Urban Renewal Park</a>
+            </h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/moses.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/fitzgerald-urban-renewal.jpg);">
+            <a class="source" href="https://muse.jhu.edu/book/11514">Fitzgerald</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/arverne-1968.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/arverne-satellite.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/arverne-curbed.jpg);">
+            <h2>today</h2>
+            <a class="source" href="http://kensinger.blogspot.com/">Nathan Kensinger</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/spura.jpg);">
+            <h2>today</h2>
+            <a class="source" href="http://www.nycedc.com/project/seward-park-mixed-use-development-project">NYC EDC</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/lincoln-center.jpg);">
+            <h2>today</h2>
+            <a class="source" href="http://performingartseducators.org/index.php/fourth-post/">Performing Arts Educators</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cadman-plaza.jpg);">
+            <h2>today</h2>
+            <a class="source" href="http://www.panoramio.com/photo/34791344">Panoramio</a>
+        </div>
+
+        <div class="slide">
+            <h2>let's map them!</h2>
+        </div>
+
+        <div class="slide">
+            <h2>we weren't the first to have this idea</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cdp1968.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/cdp1968.png);">
+            <h2>Community Development Program Progress Report (1968)</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cdp1968-map.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/cdp1968-map-zoom.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/cdp1968-arverne-map.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/atlas1984.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/atlas1984.png);">
+            <h2>Atlas of Urban Renewal (1984)</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/atlas1984-manhattan.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/atlas1984-e14th.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/atlas1984-e14th-zoom.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/foil-letter.png);">
+            <h2>FOIL</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/foil-paper.jpg);">
+            <h2>FOILed!</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/foil-letter-inspection.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/bronx-park-south-plan.JPG);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/bronx-park-south-plan-detail.JPG);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/plan-map.JPG);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/arverne-google-drive.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/crown-heights-google-drive.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/crown-heights-google-drive.png);">
+            <h2>thanks, volunteers!</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/urbanreviewer_final_excel.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/bbl.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/disappointed.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/urbanreviewer_final_excel_arrow.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/urbanreviewer_final_excel_arrow2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/tax-map.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/tax-map-zoom.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-shp.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/urban-reviewer-full.png);">
+            <a href="http://urbanreviewer.org" target="_blank">urban reviewer</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/seward-park.png);">
+            <a href="http://www.urbanreviewer.org/#map=17/40.7154/-73.9864&plan=Seward+Park" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/seward-park-data.png);">
+            <a href="https://github.com/596acres/urbanreviewer/blob/gh-pages/data/geojson/us/ny/nyc/Manhattan/Seward%20Park.geojson" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/still-vacant1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/still-vacant2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/still-vacant3.png);">
+        </div>
+
+    </body>
+</html>
