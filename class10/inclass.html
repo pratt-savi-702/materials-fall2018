@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>In-class Exercises | SAVI 702</title>
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya Sans' rel='stylesheet' type='text/css'>
+        <link href="../css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="../css/inclass.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <a href="..">&larr; SAVI 702</a>
+                <h1>In-class Exercises</h1>
+            </header>
+
+            <section>
+                <h2>Part 1: Creating data</h2>
+                <ol>
+                    <li>Using QuickMapServices, add a base map like Google Hybrid or some other map with satellite imagery and labels.</li>
+                    <li>Create a new polygon shapefile. Add a field for the name of each feature.</li>
+                    <li>Put the new shapefile in editing mode (<strong>Toggle Editing</strong>).</li>
+                    <li>Use the <strong>Add polygon feature</strong> tool to add a few polygons of your choice. These could be important landmarks in your neighborhood or places you'd like to visit.</li>
+                    <li>Exit editing mode (<strong>Toggle Editing</strong> again) and save the file.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Part 2: Georeferencing</h2>
+                <ol>
+                    <li>Go to <a href="http://www.urbanreviewer.org/">Urban Reviewer</a>.</li>
+                    <li>Find an urban renewal plan with a map image on the right when you select it. If you have a hard time finding one with a scanned map, use <a href="http://www.urbanreviewer.org/#map=17/40.6911/-73.9629&plan=Pratt+Institute">Pratt Institute</a> or <a href="http://www.urbanreviewer.org/#map=16/40.7907/-73.9697&plan=West+Side">West Side</a>.</li>
+                    <li>Click on the image to make it larger, then right click on it and <strong>save as</strong> to save it to your computer.</li>
+                    <li>Open QGIS.</li>
+                    <li>Set the project's projection (CRS) to <strong>EPSG:3857</strong>. We do this because the base layer in the next step is in that projection.</li>
+                    <li>Using QuickMapServices, add a satellite base layer with labels. I would suggest the Google Hybrid layer.</li>
+                    <li>Zoom to the general area your image should be in.</li>
+                    <li>Enable <strong>Georeferencer GDAL</strong> in the plugins area of QGIS.</li>
+                    <li>Go to <strong>Raster &gt; Georeferencer &gt; Georeferencer</strong> to open the Georeferencer window.</li>
+                    <li>Go to <strong>File &gt; Open Raster</strong> and select the image you downloaded from Urban Reviewer.</li>
+                    <li>Add 3 or 4 ground control points:
+                        <ol>
+                            <li>Switch between the Georeferencer and map windows and find a common point between the two (generally a street corner will be best).</li>
+                            <li>Click the <strong>Add point</strong> button in the Georeferencer window.</li>
+                            <li>Click on the common point in the Georeferencer window.</li>
+                            <li>When prompted to <strong>Enter map coordinates</strong>, select the <strong>From map canvas</strong> button.</li>
+                            <li>Click on the common point on the map.</li>
+                        </ol>
+                    </li>
+                    <li>Once you are happy with the ground control points, click the <strong>Settings</strong> icon in the Georeferencer window.</li>
+                    <li>Set <strong>Transformation type</strong> to <strong>Thin plate spline</strong>.</li>
+                    <li>Set <strong>Target SRS</strong> to <strong>3857</strong> (the projection the reference map is in).</li>
+                    <li>Select a location to save to.</li>
+                    <li>Check <strong>Load in QGIS when done</strong>.</li>
+                    <li>Click <strong>Start Georeferencing</strong> in the Georeferencer window (looks like a play button).</li>
+                    <li>The Georeferenced image should show up on your map.</li>
+                    <li>Find a ground control point that doesn't line up as much as you would like.</li>
+                    <li>Delete the ground control point in the Georeferencer window.</li>
+                    <li>Add a replacement ground control point.</li>
+                    <li>Georeference it again&mdash;by default your georeferenced image will be overwritten, so change the destination in the georeferencer settings if you want to make a new file.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Part 3: WFS &amp; FeatureServer</h2>
+                <ol>
+                    <li>Let's look for some data that has been published using FeatureServer. For both, try searching by using the type of service (<strong>WFS</strong> or <strong>FeatureServer</strong>) followed by what you are looking for. You might need to make your search more open if you can't find anything for a specific place.</li>
+                    <li>Visit some pages from the search results, and when you find one that has styles like <a href="https://interact.regionalchange.ucdavis.edu/arcgis/rest/services/ROI/CalEnviroscreen/FeatureServer">this page</a>, try to find a page from there that has a URL ending in <strong>FeatureServer</strong>. Copy this URL.</li>
+                    <li>In QGIS, add a connection to the FeatureServer by going to <strong>Layer &gt; Add Layer &gt; Add ArcGIS FeatureServer Layer</strong>.</li>
+                    <li>Look at the attribute table for the data.</li>
+                    <li>Try the same steps but this time looking for <strong>WFS</strong> sources. These come from many types of servers, so the pages won't look the same. You're more likely to find a link like the one on <a href="https://catalog.data.gov/dataset/public-airports">this page</a> to a <strong>Web Feature Service</strong>.</li>
+                    <li>Once you find an appropriate URL, add it to QGIS using <strong>Layer &gt; Add Layer &gt; Add WFS Layer</strong>.</li>
+                </ol>
+            </section>
+
+            <footer>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">SAVI 702</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ebrelsford.github.io/" property="cc:attributionName" rel="cc:attributionURL">Eric Brelsford</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </footer>
+        </main>
+    </body>
+</html>

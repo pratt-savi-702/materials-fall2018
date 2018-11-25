@@ -1,0 +1,551 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Class 10 | SAVI 702</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <link href="https://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans" rel="stylesheet" type="text/css">
+
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" />
+
+        <script src="../js/hammer.min.js"></script>
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <p>Welcome to Introduction to QGIS, Class 10</p>
+            <p>This is a web page that can be viewed as slides.</p>
+            <p>→ to move forward</p>
+            <p>← to go back</p>
+            <p>g to view grid</p>
+        </div>
+
+        <div class="slide">
+            <h1>Introduction to QGIS</h1>
+            <p>Class 10</p>
+        </div>
+
+        <div class="slide">
+            <h2>Heat map?</h2>
+        </div>
+
+        <div class="slide">
+            <h2>Geocoding?</h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>Creating data</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/surveyors.png);">
+            <a class="source" href="http://www.aocweb.org/surveyors/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/trigonometry.jpg);">
+            <a class="source" href="http://www.mathamazement.com/Lessons/Pre-Calculus/04_Trigonometric-Functions/applications-of-trigonometric-functions.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/triangulation.jpg);">
+            <a class="source" href="http://www.icsm.gov.au/mapping/surveying2.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/trigonometrical_survey_of_india.jpg);">
+            <a class="source" href="https://commons.wikimedia.org/wiki/File:1922_Index_of_Great_Trigonometrical_Survey_of_India.jpg">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/trigonometrical_survey_of_india_zoom.jpg);">
+            <a class="source" href="https://commons.wikimedia.org/wiki/File:1922_Index_of_Great_Trigonometrical_Survey_of_India.jpg">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/everest.jpg);">
+            <a class="source" href="https://alpinedrome.wordpress.com/tag/himalaya/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/digitizing.jpg);">
+            <a class="source" href="http://www.geo.hunter.cuny.edu/aierulli/gis2/lectures/Lecture4/lecture4.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/digitizer.jpg);">
+            <a class="source" href="http://www.geo.hunter.cuny.edu/aierulli/gis2/lectures/Lecture4/lecture4.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/gps_recievers.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/gps_satellites_reading.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-id.gif);">
+            <a class="source" href="https://www.mapbox.com/blog/id-for-openstreetmap-reaches-beta-1/">via mapbox</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-new-layer.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-new-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-new-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-new-1.png);">
+            <h2>remember, only one geometry type per shapefile</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-new-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-new-2.png);">
+            <h2>make new fields for the attribute table here</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-new-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-new-3.png);">
+            <h2>all fields in the attribute table appear here</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-edit-toolbar.png); background-size: 50%;">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 1</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2>want your new features to align nicely with existing features?</h2>
+        </div>
+
+        <div class="slide">
+            <h2>enable snapping</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-snapping-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-snapping-1.png);">
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide" style="background-image: url(img/georectified_manhattan.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/georectified_manhattan_transparent.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/georectified_manhattan_zoom.png);">
+        </div>
+
+        <div class="slide">
+            <h2>Georeferencing</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nypl_map_warper.png);">
+            <a class="source" href="http://maps.nypl.org/warper/">maps.nypl.org/warper</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nypl-building-inspector.png);">
+            <a class="source" href="http://buildinginspector.nypl.org/">NYPL Building Inspector</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nypl-building-inspector.gif);">
+            <a class="source" href="http://buildinginspector.nypl.org/">NYPL Building Inspector</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/usgs-topoview.png);">
+            <a class="source" href="https://ngmdb.usgs.gov/topoview/viewer/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/public_lab_archive.png);">
+            <a class="source" href="http://publiclab.org/archive">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/public-lab-kite.jpg);">
+            <a class="source" href="http://publiclab.org/wiki/gulf-coast">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/public_lab_gowanus.png);">
+            <a class="source" href="http://publiclab.org/map/gowanus-canal-brooklyn-new-york/2011-01-22">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>Georeferencing with QGIS</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-gcp-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-gcp-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/georectifiying_types.png);">
+            <a class="source" href="http://www.tankonyvtar.hu/hu/tartalom/tamop425/0032_terinformatika/ch02.html">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/georectified_boston_transit.jpg);">
+            <a class="source" href="http://benschmidt.org/dighist13/?p=283">
+                source
+            </a>
+        </div>
+
+        <div class="slide">
+            <h2>find landmarks easily discerned in both your image and the reference map</h2>
+        </div>
+
+        <div class="slide">
+            <h2>try to just pin down the corners of the image onto the map&mdash;start with 4 points</h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 2</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>updating attribute tables</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/refactor-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/refactor-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/refactor-1.png);">
+            <h2>deleting fields</h2>
+        </div>
+
+        <div class="slide">
+            <h2>sometimes you need to do something more complex</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/refactor-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/refactor-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/refactor-4.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/refactor-5.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/refactor-5.png);">
+            <h2>double-click to rename</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/refactor-6.png);">
+        </div>
+
+        <div class="slide">
+            <h2>refactoring always makes a new layer that you should save to a shapefile</h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>more ways to find data</h2>
+        </div>
+
+        <div class="slide">
+            <h2>ArcGIS server sites</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/featureserver-search.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/featureserver-nys.png);">
+            <a class="source" href="http://gis.ny.gov/webservices/" target="_blank">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/featureserver-nys.png);">
+            <h2>sometimes you'll find FeatureServer links this way</h2>
+            <a class="source" href="http://gis.ny.gov/webservices/" target="_blank">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/featureserver-search-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/featureserver-page-0.png);">
+            <a class="source" href="https://interact.regionalchange.ucdavis.edu/arcgis/rest/services/ROI/CalEnviroscreen/FeatureServer/3" target="_blank">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/featureserver-page-0.png);">
+            <h2>sometimes you'll end up on a page like this</h2>
+            <a class="source" href="https://interact.regionalchange.ucdavis.edu/arcgis/rest/services/ROI/CalEnviroscreen/FeatureServer/3" target="_blank">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/featureserver-page-1.png);">
+            <a class="source" href="https://interact.regionalchange.ucdavis.edu/arcgis/rest/services/ROI/CalEnviroscreen/FeatureServer" target="_blank">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/featureserver-page-1.png);">
+            <h2>find the main FeatureServer page when you do</h2>
+            <a class="source" href="https://interact.regionalchange.ucdavis.edu/arcgis/rest/services/ROI/CalEnviroscreen/FeatureServer" target="_blank">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/featureserver-new-connection.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/featureserver-connect.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/featureserver-output.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/featureserver-output.png);">
+            <h2>this is a vector data source you can export to a shapefile</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs.png);">
+            <a class="source" href="https://catalog.data.gov/dataset/public-airports" target="_blank">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs.png);">
+            <h2>WFS (Web Feature Service) is an open standard similar to FeatureServer</h2>
+            <a class="source" href="https://catalog.data.gov/dataset/public-airports" target="_blank">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs.png);">
+            <h2>FeatureServer is ESRI-only, WFS is part of a number of open source servers</h2>
+            <a class="source" href="https://catalog.data.gov/dataset/public-airports" target="_blank">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoserver.png);">
+            <a class="source" href="http://geoserver.org/" target="_blank">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapserver-open.png);">
+            <a class="source" href="https://mapserver.org/" target="_blank">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapserver.png);">
+            <a class="source" href="https://interact.regionalchange.ucdavis.edu/arcgis/rest/services/ROI/CalEnviroscreen/MapServer" target="_blank">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapserver.png);">
+            <h2>you'll also run into ArcGIS's MapServer and WMS</h2>
+            <a class="source" href="https://interact.regionalchange.ucdavis.edu/arcgis/rest/services/ROI/CalEnviroscreen/MapServer" target="_blank">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapserver-output.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapserver-output.png);">
+            <h2>both are raster and work fine as basemaps</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapserver-output.png);">
+            <h2>they're not very useful for getting data</h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 3</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>Urban Reviewer</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/urban-reviewer-full.png);">
+            <a href="http://urbanreviewer.org" target="_blank">urban reviewer</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/596.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/596-signs.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/596-rockaways.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/edgemere-urban-renewal-park-streetview.png);">
+            <h2>
+                <a href="https://www.google.com/maps/place/Edgemere+Urban+Renewal+Park/@40.595588,-73.776975,3a,75y,172.62h,90t/data=!3m4!1e1!3m2!1sZgWcG17VxRvOezZpdWXGkA!2e0!4m6!1m3!3m2!1s0x0:0xae6844ceae037acd!2sEdgemere+Urban+Renewal+Park!3m1!1s0x0:0xae6844ceae037acd!6m1!1e1" target="_blank">Edgemere Urban Renewal Park</a>
+            </h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/edgemere-urban-renewal-park-signs.jpg);">
+            <a class="source" href="http://596acres.org/en/lot/4158370033/" target="_blank">
+                596 Acres
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/edgemere-urban-renewal-park-signs-zoom.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/edgemere-urban-renewal-park-signs-zoom.jpg);">
+            <h2>call Parks and say "where's our park?"</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/edgemere-urban-renewal-park.png);">
+            <h2>
+                <a href="https://www.google.com/maps/place/Edgemere+Urban+Renewal+Park/@40.595588,-73.776975,17z/data=!4m6!1m3!3m2!1s0x0:0xae6844ceae037acd!2sEdgemere+Urban+Renewal+Park!3m1!1s0x0:0xae6844ceae037acd" target="_blank">Edgemere Urban Renewal Park</a>
+            </h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/moses.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/fitzgerald-urban-renewal.jpg);">
+            <a class="source" href="https://muse.jhu.edu/book/11514">Fitzgerald</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/arverne-1968.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/arverne-satellite.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/arverne-curbed.jpg);">
+            <h2>today</h2>
+            <a class="source" href="http://kensinger.blogspot.com/">Nathan Kensinger</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/spura.jpg);">
+            <h2>today</h2>
+            <a class="source" href="http://www.nycedc.com/project/seward-park-mixed-use-development-project">NYC EDC</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/lincoln-center.jpg);">
+            <h2>today</h2>
+            <a class="source" href="http://performingartseducators.org/index.php/fourth-post/">Performing Arts Educators</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cadman-plaza.jpg);">
+            <h2>today</h2>
+            <a class="source" href="http://www.panoramio.com/photo/34791344">Panoramio</a>
+        </div>
+
+        <div class="slide">
+            <h2>let's map them!</h2>
+        </div>
+
+        <div class="slide">
+            <h2>we weren't the first to have this idea</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cdp1968.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/cdp1968.png);">
+            <h2>Community Development Program Progress Report (1968)</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cdp1968-map.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/cdp1968-map-zoom.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/cdp1968-arverne-map.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/atlas1984.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/atlas1984.png);">
+            <h2>Atlas of Urban Renewal (1984)</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/atlas1984-manhattan.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/atlas1984-e14th.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/atlas1984-e14th-zoom.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/foil-letter.png);">
+            <h2>FOIL</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/foil-paper.jpg);">
+            <h2>FOILed!</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/foil-letter-inspection.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/bronx-park-south-plan.JPG);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/bronx-park-south-plan-detail.JPG);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/plan-map.JPG);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/arverne-google-drive.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/crown-heights-google-drive.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/crown-heights-google-drive.png);">
+            <h2>thanks, volunteers!</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/urbanreviewer_final_excel.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/bbl.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/disappointed.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/urbanreviewer_final_excel_arrow.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/urbanreviewer_final_excel_arrow2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/tax-map.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/tax-map-zoom.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-shp.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/urban-reviewer-full.png);">
+            <a href="http://urbanreviewer.org" target="_blank">urban reviewer</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/seward-park.png);">
+            <a href="http://www.urbanreviewer.org/#map=17/40.7154/-73.9864&plan=Seward+Park" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/seward-park-data.png);">
+            <a href="https://github.com/596acres/urbanreviewer/blob/gh-pages/data/geojson/us/ny/nyc/Manhattan/Seward%20Park.geojson" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/still-vacant1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/still-vacant2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/still-vacant3.png);">
+        </div>
+
+
+    </body>
+</html>
