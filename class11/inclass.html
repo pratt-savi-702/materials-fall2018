@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>In-class Exercises | SAVI 702</title>
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya Sans' rel='stylesheet' type='text/css'>
+        <link href="../css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="../css/inclass.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <a href="..">&larr; SAVI 702</a>
+                <h1>In-class Exercises</h1>
+            </header>
+
+            <section>
+                <h2>Part 1: Vector Modeling</h2>
+                <p>In this part we will make a simple model. We will attempt to make a model that can predict where there will be more pressure on renters due to Airbnb listings in their neighborhoods.</p>
+                <ol>
+                    <li>Download <a href="data/savi702-class11-data.zip">today's data</a>.</li>
+                    <li>Open the Queens census tracts in <strong>queens_census_tracts_refactored</strong> and Airbnb listings shapefile in <strong>airbnb_listings_20181001_queens</strong> and use <strong>Count points in polygons</strong> to determine how many Airbnb listings exist in each census tract.</li>
+                    <li>Using the field calculator, create two new fields. The new fields should scale each field using <code>scale_linear</code>.
+                        <ol>
+                            <li>First, <strong>med_income</strong> has a minimum value of 15474, maximum value of 151964, so we use this expression in the field calculator:
+                        <pre><code>scale_linear("med_income", 
+    15474, 151964,
+    1, 0)</code></pre>
+                        Add an <strong>s_</strong> at the beginning of the new field name to indicate that it is scaled. In this case, <strong>med_income</strong> becomes <strong>s_income</strong> (since you can only use 10 characters in a name). <strong>s_income</strong> should be a decimal number field with length 10 and precision 8.
+                            </li>
+                            <li>Follow a similar process for <strong>NUMPOINTS</strong> (created when we calculated the Airbnb listings per tract):
+                        <pre><code>scale_linear("NUMPOINTS", 
+    <strong>minimum points</strong>, <strong>maximum points</strong>,
+    0, 1)</code></pre>
+                                You'll need to find the minimum and maximum values for NUMPOINTS. Make the resulting field <strong>s_airbnb</strong>, also a decimal number with length 10 and precision 8.
+                            </li>
+                        </ol>
+                    </li>
+                    <li>Create a graduated style for the tracts. For the column expression, add each of the scaled fields (<strong>s_airbnb</strong>, <strong>s_renters</strong>, <strong>s_income</strong>) together.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Part 2: Raster analysis</h2>
+                <ol>
+                    <li>Open each of these shapefiles: <strong>parks_properties</strong>, <strong>Sea Level Rise Maps</strong>, and <strong>Subway Entrances</strong>.</li>
+                    <li>Reproject each shapefile to <strong>2263</strong>.</li>
+                    <li>Rasterize each reprojected shapefile (<strong>Raster &gt; Conversion &gt; Rasterize</strong>). Use these settings:
+                        <ul>
+                            <li>Fixed value to burn: 1</li>
+                            <li>Output raster size units: Georeferenced units</li>
+                            <li>Width and height: 100</li>
+                            <li>Output extent: use layer extent, the layer you're rasterizing</li>
+                        </ul>
+                    </li>
+                    <li>Make proximity rasters for each rasterized layer (<strong>Raster &gt; Analysis &gt; Proximity</strong>). Use these settings:
+                        <ul>
+                            <li>Pixel values to be considered target pixels: 1</li>
+                            <li>Distance units: Georeferenced coordinates</li>
+                            <li>Maximum distance: 2500</li>
+                            <li>Nodata value: 2500</li>
+                        </ul>
+                    </li>
+                    <li>We want higher values to mean more desirable areas, but right now our parks and subway stations have higher values further from those features. Invert the values by using the Raster Calculator (<strong>Raster &gt; Raster Calculator</strong>) for these two layers. The expression should subtract the raster value from the maximum value, so if you have a raster called <strong>Proximity to parks</strong> with a maximum value of <strong>2500</strong>, use the expression <strong>2500 - "Proximity to parks@1"</strong>.</li>
+                    <li>Finally, add each of the resulting layers' values using the Raster Calculator. Higher values should be more desirable areas using the factors we have included.</li>
+                </ol>
+            </section>
+
+            <footer>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">SAVI 702</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ebrelsford.github.io/" property="cc:attributionName" rel="cc:attributionURL">Eric Brelsford</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </footer>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Class 11 | SAVI 702</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <link href="https://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans" rel="stylesheet" type="text/css">
+
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" />
+
+        <script src="../js/hammer.min.js"></script>
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <p>Welcome to Introduction to QGIS, Class 11</p>
+            <p>This is a web page that can be viewed as slides.</p>
+            <p>→ to move forward</p>
+            <p>← to go back</p>
+            <p>g to view grid</p>
+        </div>
+
+        <div class="slide">
+            <h1>Introduction to QGIS</h1>
+            <p>Class 11</p>
+        </div>
+
+        <div class="slide">
+            <h2>georeferencing?</h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>modeling</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/weather_map.png);">
+            <a class="source" href="http://forecast.io/atlas/#temperature-north_america">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>models are simplified descriptions of reality</h2>
+        </div>
+
+        <div class="slide">
+            <h2>models attempt to answer questions we don't have perfect data for</h2>
+        </div>
+
+        <div class="slide">
+            <h2>where in the US do people lack access to food?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/usda-map.png);">
+            <a class="source" href="https://www.ers.usda.gov/data-products/food-access-research-atlas/go-to-the-atlas/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/usda-method-0.png);">
+            <a class="source" href="https://www.ers.usda.gov/data-products/food-access-research-atlas/documentation/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/usda-method-1.png);">
+            <a class="source" href="https://www.ers.usda.gov/data-products/food-access-research-atlas/documentation/">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>where in NYC are people most likely to be gentrified out of their neighborhood?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/rethinktheblock3.png);">
+            <a class="source" href="http://www.tahlandproductions.com/Files/methods/rethinktheblock/Final.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/rethinktheblock1.jpg);">
+            <a class="source" href="http://www.tahlandproductions.com/Files/methods/rethinktheblock/Final.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/rethinktheblock2.jpg);">
+            <a class="source" href="http://www.tahlandproductions.com/Files/methods/rethinktheblock/Final.html">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>where in LA do people need more parks?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/la-parks.png);">
+            <a class="source" href="http://lacountyparkneeds.org/final-report/">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>seek out a model that suits your needs</h2>
+        </div>
+
+        <div class="slide">
+            <h2>it's okay to critique a model and change it</h2>
+        </div>
+
+        <div class="slide">
+            <h2>you can also make up your own models</h2>
+        </div>
+
+        <div class="slide">
+            <h2>when you make your own, try to test the model</h2>
+        </div>
+
+        <div class="slide">
+            <h2>where in Queens are renters most likely to be negatively affected by Airbnb listings?</h2>
+        </div>
+
+        <div class="slide">
+            <h2>we'll model this using:</h2>
+            <ul style="list-style: disc;">
+                <li>median income</li>
+                <li>percentage of renters</li>
+                <li>number of Airbnb listings</li>
+            </ul>
+        </div>
+
+        <div class="slide" style="background-image: url(img/inside-airbnb.png);">
+            <a class="source" href="http://insideairbnb.com/get-the-data.html">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>for our convenience, we'll scale each field down to a 0 &rarr; 1 range</h2>
+        </div>
+
+        <div class="slide">
+            <h2>a higher value being higher risk</h2>
+        </div>
+
+        <div class="slide">
+            <h2>for example, median income goes from 15474 to 151964</h2>
+        </div>
+
+        <div class="slide">
+            <h2>for example, median income goes from 15474 to 151964</h2>
+            <h2>tracts closer to 15474 will be closer to 1 (more risk)</h2>
+        </div>
+
+        <div class="slide">
+            <h2>for example, median income goes from 15474 to 151964</h2>
+            <h2>tracts closer to 151964 will be closer to 0 (less risk)</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/normalize-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/normalize-0.png);">
+            <pre style="background-color: rgba(255, 255, 255, 0.8);"><code>scale_linear( "med_income",
+    15474, 151964,
+    1, 0)</code></pre>
+        </div>
+
+        <div class="slide" style="background-image: url(img/normalize-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/normalize-2.png);">
+        </div>
+
+        <div class="slide">
+            <h2>then we can add each of these scaled fields together and know 0 is the lowest and 3 is the highest</h2>
+        </div>
+
+        <div class="slide">
+            <h2>if you have <code>s_income</code>, <code>s_renters</code> and <code>s_airbnb</code>, you can add them together to get your model value (index)</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/model-add.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 1</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide" style="background-image: url(img/raster-vectors.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/raster-vectors.png);">
+            <h2>where is a good place to buy property?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/raster-vectors.png);">
+            <h2>eg, near a train, near a park, far from flood zones</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/raster-vectors.png);">
+            <h2>census tracts (or other polygons) don't necessarily make sense here</h2>
+        </div>
+
+        <div class="slide">
+            <h2>raster analysis</h2>
+        </div>
+
+        <div class="slide">
+            <ol>
+                <li>convert each layer to rasters</li>
+                <li>calculate proximity to each</li>
+                <li>add proximities</li>
+            </ol>
+        </div>
+
+        <div class="slide" style="background-image: url(img/rasterize.png); background-size: 75%;">
+        </div>
+
+        <div class="slide" style="background-image: url(img/rasterize.png); background-size: 75%;">
+            <h2>1. convert to raster</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/rasterize-dialog.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/rasterize-dialog.png);">
+            <h2>make sure you are in a projection other than 4326</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/rasterized-stations.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/proximity.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/proximity.png);">
+            <h2>2. calculate proximity</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/proximity-dialog.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/proximity-output.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/raster-calculator.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/raster-calculator.png);">
+            <h2>3. add proximities</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/rasters-combined.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 2</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide" style="background-image: url(img/schools-parks.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/schools-parks.png);">
+            <h2>how far is it from each school to the nearest park?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/line-to-hub.png); background-size: 70%;">
+        </div>
+
+        <div class="slide" style="background-image: url(img/line-to-hub.png); background-size: 70%;">
+            <h2>draws lines from each source point to the closest "hub"</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/line-to-hub-centroids.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/line-to-hub-centroids-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/line-to-hub-centroids-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/line-to-hub-centroids-1.png);">
+            <h2>this doesn't seem quite right!</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/line-to-hub-centroids-1.png);">
+            <h2>if hubs are polygons, QGIS uses the centroid for the hub</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/extracted-vertices.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/extracted-vertices.png);">
+            <h2>we can extract the vertices first</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/line-to-hub-vertices.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/line-to-hub-vertices.png);">
+            <h2>better!</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/line-to-hub-densified.png);">
+        </div>
+
+    </body>
+</html>
