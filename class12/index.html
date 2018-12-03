@@ -1,0 +1,697 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Class 12 | SAVI 702</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <link href="https://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans" rel="stylesheet" type="text/css">
+
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" />
+
+        <script src="../js/hammer.min.js"></script>
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <p>Welcome to Introduction to QGIS, Class 12</p>
+            <p>This is a web page that can be viewed as slides.</p>
+            <p>→ to move forward</p>
+            <p>← to go back</p>
+            <p>g to view grid</p>
+        </div>
+
+        <div class="slide">
+            <h1>Introduction to QGIS</h1>
+            <p>Class 12</p>
+        </div>
+
+        <div class="slide">
+            <h2>modeling?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/schools-parks.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/schools-parks.png);">
+            <h2>how far is it from each school to the nearest park?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/line-to-hub.png); background-size: 70%;">
+        </div>
+
+        <div class="slide" style="background-image: url(img/line-to-hub.png); background-size: 70%;">
+            <h2>draws lines from each source point to the closest "hub"</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/line-to-hub-centroids.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/line-to-hub-centroids-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/line-to-hub-centroids-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/line-to-hub-centroids-1.png);">
+            <h2>this doesn't seem quite right!</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/line-to-hub-centroids-1.png);">
+            <h2>if hubs are polygons, QGIS uses the centroid for the hub</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/extracted-vertices.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/extracted-vertices.png);">
+            <h2>we can extract the vertices first</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/line-to-hub-vertices.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/line-to-hub-vertices.png);">
+            <h2>better!</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/line-to-hub-densified.png);">
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>remote sensing</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nadar.jpg);">
+            <a class="source" href="http://professionalaerialphotographers.com/content.aspx?page_id=22&club_id=808138&module_id=158950">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nadar_paris.jpg);">
+            <a class="source" href="http://www.geog.ucsb.edu/~jeff/115a/remotesensinghistory.html">1858, Paris</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nadar_paris2.jpg);">
+            <a class="source" href="http://www.geog.ucsb.edu/~jeff/115a/remotesensinghistory.html">1868, Paris</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/sf_kite.jpg);">
+            <a class="source" href="https://en.wikipedia.org/wiki/1906_San_Francisco_earthquake">1906, San Francisco</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/sf_kite_zoom.jpg);">
+            <a class="source" href="https://en.wikipedia.org/wiki/1906_San_Francisco_earthquake">1906, San Francisco</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/lawrence_kite_camera.jpg);">
+            <a class="source" href="http://robroy.dyndns.info/lawrence/air+space.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/lawrence_kite_chain.jpg);">
+            <a class="source" href="http://robroy.dyndns.info/lawrence/air+space.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/pigeons_cameras.jpg);">
+            <a class="source" href="https://commons.wikimedia.org/wiki/Category:Pigeons_in_aerial_photography">Neubronner, 1908</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/pigeon_photos.jpg);">
+            <a class="source" href="https://commons.wikimedia.org/wiki/Category:Pigeons_in_aerial_photography">Neubronner, 1908</a>
+        </div>
+
+        <div class="slide">
+            <h2>Landsat</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_timeline2.jpg);">
+            <a class="source" href="http://www.space.com/19716-nasa-landsat-satellites-earth-space-infographic.html">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>the longest continuous satellite imagery collection program</h2>
+        </div>
+
+        <div class="slide">
+            <h2>Landsat is "earth observing", as opposed to people observing (spying)</h2>
+        </div>
+
+        <div class="slide">
+            <h2>1972: first Landsat satellite launched</h2>
+        </div>
+
+        <div class="slide">
+            <h2>1985: Landsat is privatized, run by Hughes and RCA</h2>
+        </div>
+
+        <div class="slide">
+            <h2>2001: Landsat fully returned to public hands</h2>
+        </div>
+
+        <div class="slide">
+            <h2>2007: all Landsat imagery becomes free</h2>
+        </div>
+
+        <div class="slide">
+            <h2>2013: Landsat 8 launched</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat.jpg);">
+            <a class="source" href="http://www.thegeofactor.com/a-new-look-at-the-earth-landsat-8-launches/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_launch.jpg);">
+            <a class="source" href="http://www.ssec.wisc.edu/news/articles/2565">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>Landsat imagery is used for:</h2>
+        </div>
+
+        <div class="slide">
+            <ul style="list-style: disc;">
+                <li>irrigated water monitoring</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <ul style="list-style: disc;">
+                <li>irrigated water monitoring</li>
+                <li>land cover mapping</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <ul style="list-style: disc;">
+                <li>irrigated water monitoring</li>
+                <li>land cover mapping</li>
+                <li>land use change studies</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <ul style="list-style: disc;">
+                <li>irrigated water monitoring</li>
+                <li>land cover mapping</li>
+                <li>land use change studies</li>
+                <li>invasive species detection and monitoring</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <ul style="list-style: disc;">
+                <li>irrigated water monitoring</li>
+                <li>land cover mapping</li>
+                <li>land use change studies</li>
+                <li>invasive species detection and monitoring</li>
+                <li>coastal wetlands monitoring</li>
+            </ul>
+            <a href="http://remotesensing.usgs.gov/landsat_fees.php" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/aral-1977.jpg);">
+            <a class="source" href="https://www.wired.com/2012/07/landsat-40-significant-images/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/aral-2018.png);">
+            <a class="source" href="https://earthobservatory.nasa.gov/world-of-change/aral_sea.php">source</a>
+        </div>
+
+        <div class="slide">
+            <h2><em>resolution</em>: how much area on the ground is represented by one pixel</h2>
+        </div>
+
+        <div class="slide">
+            <h2>if a satellite has 30m resolution, each pixel represents a 30m x 30m square</h2>
+        </div>
+
+        <div class="slide">
+            <h2>a smaller number for resolution is better</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/satellite_comparison.png);">
+            <a class="source" href="http://satsummit.github.io/landscape/#capture">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>temporal resolution</h2>
+        </div>
+
+        <div class="slide">
+            <h2>how frequently does the satellite take a picture of a given location?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_paths.gif);">
+            <a class="source" href="http://www.fao.org/docrep/003/t0446e/t0446e04.htm">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_scenes.gif);">
+            <a class="source" href="http://cast.uark.edu/projects/lulc-change-in-carroll-county/literature-review.html">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>bands</h2>
+        </div>
+
+        <div class="slide">
+            <h2>satellites produce a number of images at different wavelengths</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/em_spectrum.jpg);">
+            <a class="source" href="http://www.ces.fau.edu/nasa/module-2/radiation-sun.php">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_wavelengths.png);">
+            <a class="source" href="http://landsat.gsfc.nasa.gov/?p=10643">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_truecolor.jpg);">
+            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_truecolor.jpg);">
+            <h2>bands 2, 3, and 4 (blue, green, and red)</h2>
+            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_band5.jpg);">
+            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_band5.jpg);">
+            <h2>band 5 (near infrared)</h2>
+            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/publiclab_infrared.jpg);">
+            <a class="source" href="https://publiclab.org/wiki/near-infrared-camera-history">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_bands6_7.jpg);">
+            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_bands6_7.jpg);">
+            <h2>band 6 and 7 (shortwave infrared)</h2>
+            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_band9.jpg);">
+            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_band9.jpg);">
+            <h2>band 9 (clouds)</h2>
+            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>you will combine bands to suit your needs</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat8_infrared.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/bands.gif);">
+            <a class="source" href="http://satsummit.github.io/landscape/#capture">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/semi-automatic-classification-cropland.png);">
+            <a class="source" href="http://fromgistors.blogspot.com/2014/01/land-cover-classification-of-cropland.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/scp-classification.png);">
+            <a class="source" href="https://www.youtube.com/watch?v=5bi9QOBHXn8">source</a>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>LiDAR</h2>
+        </div>
+
+        <div class="slide">
+            <h2>light detection and ranging</h2>
+        </div>
+
+        <div class="slide">
+            <h2>LiDAR actively uses lasers and sees how long it takes for a reflection to arrive</h2>
+        </div>
+
+        <div class="slide">
+            <h2>like SONAR (sound) and RADAR (radio waves)</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/lidar_diagram.png);">
+            <a class="source" href="http://gis.utah.gov/data/elevation-terrain-data/exploring-lidar/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/lidar.jpg);">
+            <a class="source" href="http://www.mckimcreed.com/airborne-lidar/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/lidar_oregon.png);">
+            <a class="source" href="http://eijournal.com/print/articles/consider-the-benefits-of-mobile-lidar-for-transportation-projects">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/streetview.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/point_cloud_city.gif);">
+            <a class="source" href="https://vimeo.com/89982874">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/self_driving_car.gif);">
+            <a class="source" href="http://thenextweb.com/shareables/2015/11/12/this-is-how-a-self-driving-car-sees-the-streets-of-london/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/lidar-new-england.png);">
+            <a class="source" href="http://news.nationalgeographic.com/news/2014/01/140103-new-england-archaeology-lidar-science/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/lidar-new-england-filtered.png);">
+            <a class="source" href="http://news.nationalgeographic.com/news/2014/01/140103-new-england-archaeology-lidar-science/">source</a>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 1</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide" style="background-image: url(img/earthexplorer.png);">
+            <a class="source" href="https://earthexplorer.usgs.gov/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/earthexplorer-output.png);">
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>OpenStreetMap</h2>
+        </div>
+
+        <div class="slide">
+            <h2>open data</h2>
+        </div>
+
+        <div class="slide">
+            <h2>open data</h2>
+            <p>data that is:
+                <ul style="list-style: disc outside; padding-left: 50px;">
+                    <li>accessible (online, in a widely-used format)</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="slide">
+            <h2>open data</h2>
+            <p>data that is:
+                <ul style="list-style: disc outside; padding-left: 50px;">
+                    <li>accessible (online, in a widely-used format)</li>
+                    <li>licensed freely</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="slide">
+            <h2>open data</h2>
+            <p>data that is:
+                <ul style="list-style: disc outside; padding-left: 50px;">
+                    <li>accessible (online, in a widely-used format)</li>
+                    <li>licensed freely</li>
+                    <li>usually created by a large entity</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-opendata-filming-locations.png);">
+            <a class="source" href="https://data.cityofnewyork.us/Business/Filming-Locations-Scenes-from-the-City-/qb3k-n8mm">data.cityofnewyork.us/Business/Filming-Locations-Scenes-from-the-City-/qb3k-n8mm</a>
+        </div>
+
+        <div class="slide">
+            <h2>collaborative data</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/public_lab_archive.png);">
+            <a class="source" href="http://publiclab.org/archive">
+                source
+            </a>
+        </div>
+
+        <div class="slide">
+            <h2>what is OpenStreetMap (OSM)?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-website.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/treasure_map.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm_cake_globe.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/equinix-datacenter.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/sotmus2014.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-show-me-the-way.gif);">
+            <a class="source" href="http://osmlab.github.io/show-me-the-way/">show me the way</a>
+        </div>
+
+        <div class="slide">
+            <iframe width="640" height="360" src="http://www.youtube.com/embed/7sC83j6vzjo?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-draw.png);">
+        </div>
+
+        <div class="slide">
+            <h2>"the free wiki map of the world"</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc_grids.png);">
+            <a class="source" href="http://www.datapointed.net/visualizations/maps/enhanced-street-grids/?lat=40.791849&lon=-74.072056&z=12">
+                source
+            </a>
+        </div>
+
+        <div class="slide">
+            <p>started in 2004 in the UK</p>
+        </div>
+
+        <div class="slide">
+            <p>started in 2004 in the UK</p>
+            <p>first State of the Map conference in 2007</p>
+        </div>
+
+        <div class="slide">
+            <p>started in 2004 in the UK</p>
+            <p>first State of the Map conference in 2007</p>
+            <p>over 1 million registered users in 2013</p>
+        </div>
+
+        <div class="slide">
+            <p>started in 2004 in the UK</p>
+            <p>first State of the Map conference in 2007</p>
+            <p>over 1 million registered users in 2013</p>
+            <p>over 4 million registered users in 2017</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-registered-users.png);">
+            <a class="source" href="http://wiki.openstreetmap.org/wiki/Stats">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-db-stats.png);">
+            <a class="source" href="http://wiki.openstreetmap.org/wiki/Stats">
+                source
+            </a>
+        </div>
+
+        <div class="slide">
+            <h2>license</h2>
+        </div>
+
+        <div class="slide">
+            <h2>license</h2>
+            <p>Open Database License (ODbL)</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/odbl.png);">
+            <a class="source" href="http://opendatacommons.org/licenses/odbl/summary/">
+                source
+            </a>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>what does the data look like?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-shapes.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-shapes-nodes.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-shapes-ways.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-shapes-closed-ways.png);">
+        </div>
+
+        <div class="slide">
+            <h2>shapes</h2>
+            <ul style="list-style: disc outside; padding-left: 50px;">
+                <li>nodes (points)</li>
+                <li>ways (lines)</li>
+                <li>closed ways (polygons)</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>nodes, ways, closed ways</h2>
+            <p>are just shapes with <strong>no meaning</strong> until you give them attributes, as in any GIS</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-shapes.png);">
+        </div>
+
+        <div class="slide">
+            <h2>so you have to add attributes</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-attribute-table.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-tags-union-square.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-tags-bmt-broadway.png);">
+        </div>
+
+        <div class="slide">
+            <p>an attribute table wouldn't work because:</p>
+            <ul style="list-style: disc outside; padding-left: 50px;">
+                <li>there would be thousands of columns</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <p>an attribute table wouldn't work because:</p>
+            <ul style="list-style: disc outside; padding-left: 50px;">
+                <li>there would be thousands of columns</li>
+                <li>and most of those columns would be empty (eg 'electrified')</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <p>an attribute table wouldn't work because:</p>
+            <ul style="list-style: disc outside; padding-left: 50px;">
+                <li>there would be thousands of columns</li>
+                <li>and most of those columns would be empty (eg 'electrified')</li>
+                <li>what you could map would be predetermined</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>tags</h2>
+            <p>key-value pairs</p>
+        </div>
+
+        <div class="slide">
+            <h2>tags</h2>
+            <p>leisure=park</p>
+        </div>
+
+        <div class="slide">
+            <h2>tags</h2>
+            <p>name=Union Square West</p>
+        </div>
+
+        <div class="slide">
+            <h2>tags</h2>
+            <p>we make them up as we go!</p>
+        </div>
+
+        <div class="slide">
+            <h2>folksonomy</h2>
+        </div>
+
+        <div class="slide">
+            <h2>folksonomy</h2>
+            <p>a collaborative system of categorization</p>
+        </div>
+
+        <div class="slide">
+            <h2>you can tag things any way you want</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/spinny-equals-no.jpg);">
+            <a class="source" href="http://www.aaronland.info/weblog/2011/09/13/inodes/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm_weird_tags.png);">
+            <a class="source" href="https://twitter.com/professorlemeza/status/523229634755047424">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/taginfo_unicycle_barely.png);">
+            <a class="source" href="http://taginfo.openstreetmap.org/keys/unicycle#values">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/overpass_unicycle_barely.png);">
+            <a class="source" href="http://overpass-turbo.eu/?w=%22unicycle%22%3D%22barely%22+global&R">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wiki_barrier_kissinggate.png);">
+            <a class="source" href="http://wiki.openstreetmap.org/wiki/Tag:barrier%3Dkissing_gate">
+                source
+            </a>
+        </div>
+
+        <div class="slide">
+            <h2>how do you use the data?</h2>
+        </div>
+
+        <div class="slide">
+            <h2>there are many ways, but I recommend starting with:</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/metro-extracts.png);">
+            <h2>metro extracts</h2>
+            <a class="source" href="https://www.nextzen.org/metro-extracts/index.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/overpass.png);">
+            <h2>overpass</h2>
+            <a class="source" href="https://overpass-turbo.eu/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/quickosm.png);">
+            <h2>QuickOSM plugin</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/quickosm-results.png);">
+            <h2>QuickOSM plugin</h2>
+        </div>
+
+
+    </body>
+</html>

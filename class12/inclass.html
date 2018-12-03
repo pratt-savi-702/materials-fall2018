@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>In-class Exercises | SAVI 702</title>
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya Sans' rel='stylesheet' type='text/css'>
+        <link href="../css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="../css/inclass.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <a href="..">&larr; SAVI 702</a>
+                <h1>In-class Exercises</h1>
+            </header>
+
+            <section>
+                <h2>Part 1: LiDAR imagery</h2>
+                <ol>
+                    <li>Download <a href="data/savi702-class12-data.zip">today's data</a>.</li>
+                    <li>Open <strong>landcover.tif</strong> in QGIS. This is an extract of the city-wide landcover data available on the <a href="https://data.cityofnewyork.us/Environment/Landcover-Raster-Data-2010-/9auy-76zt">open data portal</a>.</li>
+                    <li>Experiment with using the <strong>Sieve</strong> function: <strong>Raster &gt; Analysis &gt; Sieve</strong>, select a place to save and a threshold (say 100). This will make smaller clumps of pixels become part of their neighboring clumps of pixels.</li>
+                    <li>Right click on the original image, select <strong>Styles &gt; Copy Styles</strong>, then paste them into the sieved layer (right click, <strong>Styles &gt; Paste Styles</strong>).</li>
+                    <li>Build vectors out of the resulting raster. Go to <strong>Raster &gt; Conversion &gt; Polygonize</strong> and select a location to save to.</li>
+                    <li>In the vector layer use an expression to select only the paved areas (gray in the raster).</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Part 2: Elevation data</h2>
+                <ol>
+                    <li>Open <strong>grand-canyon-dem-crop.tif</strong> in QGIS.</li>
+                    <li>Style the DEM using the Hillshade style in the layer styling panel.</li>
+                    <li>Create contour lines for the DEM with <strong>Raster &gt; Extraction &gt; Contour</strong>.</li>
+                </ol>
+            </section>
+
+            <footer>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">SAVI 702</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ebrelsford.github.io/" property="cc:attributionName" rel="cc:attributionURL">Eric Brelsford</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </footer>
+        </main>
+    </body>
+</html>
